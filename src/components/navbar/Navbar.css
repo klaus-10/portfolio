@@ -1,72 +1,3 @@
-/* .navMenu {
-  position: fixed;
-  display: flex;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.navMenu a {
-  color: black;
-  text-decoration: none;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  font-weight: 500;
-  display: inline-block;
-  width: 80px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.navMenu a:hover {
-  color: #fddb3a;
-}
-
-.navMenu .dot {
-  width: 6px;
-  height: 6px;
-  background: #fddb3a;
-  border-radius: 50%;
-  opacity: 0;
-  -webkit-transform: translateX(30px);
-  transform: translateX(30px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.navMenu .pagelink:nth-child(1) a:hover ~ .dot {
-  -webkit-transform: translateX(30px);
-  transform: translateX(30px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-.navMenu .pagelink:nth-child(2) a:hover ~ .dot {
-  -webkit-transform: translateX(110px);
-  transform: translateX(110px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-.navMenu .pagelink:nth-child(3) a:hover ~ .dot {
-  -webkit-transform: translateX(200px);
-  transform: translateX(200px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-.navMenu .pagelink:nth-child(4) a:hover ~ .dot {
-  -webkit-transform: translateX(285px);
-  transform: translateX(285px);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-} */
-
 .navbar {
   width: 100%;
   height: 50px;
@@ -84,7 +15,7 @@
   background: transparent;
   backdrop-filter: blur(0) saturate(1.7);
   margin: 0;
-  padding: 8px 10px;
+  padding: 10px 14px;
   border-radius: 50px;
   transition: all 0.2s linear;
 }
@@ -113,19 +44,15 @@
   z-index: 3;
 }
 
-.pageLink:hover {
-  color: #fddb3a;
-}
-
 .dot {
   height: 35px;
-  background: var(--color-white50);
+  background: #2e4940;
   border-radius: var(--24px);
 
   opacity: 1;
   position: absolute;
   z-index: 2;
-  backdrop-filter: blur(20px) saturate(1.7);
+  backdrop-filter: blur(20px) saturate(2);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   left: calc(var(--20px) - 10px);
@@ -133,7 +60,7 @@
 
 .glass {
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.08) !important;
+  background: rgba(255, 255, 255, 0.03) !important;
   /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important; */
   backdrop-filter: blur(7px) !important;
   -webkit-backdrop-filter: blur(7px) !important;

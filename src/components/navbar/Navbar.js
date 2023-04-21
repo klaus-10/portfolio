@@ -49,7 +49,7 @@ export default function Navbar() {
     }
 
     // 3. Move dot to current item position
-    dot.style.left = pos == 0 ? "calc(var(--20px) - 10px)" : length + 10 + "px";
+    dot.style.left = pos == 0 ? "calc(var(--20px) - 6px)" : length + 14 + "px";
     dot.style.width = links[pos].offsetWidth + "px";
   };
 
