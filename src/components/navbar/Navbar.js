@@ -1,8 +1,12 @@
 import React, { useEffect, useId, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import list from "./Navbar.json";
 import "./Navbar.css";
 
 export default function Navbar() {
+  // navigate
+  let navigate = useNavigate();
+
   // lista item del menu
   const [navList, setNavList] = React.useState(list.navbar);
 
@@ -23,8 +27,8 @@ export default function Navbar() {
         document.getElementById("navbar-content").classList.add("glass");
         document.getElementById("navbar-content").classList.add("blur");
       } else {
-        document.getElementById("navbar-content").style.background =
-          "var(--color-green800)";
+        // document.getElementById("navbar-content").style.background =
+        //   "var(--color-green800)";
         document.getElementById("navbar-content").style.backdropFilter =
           "blur(0)";
         document.getElementById("navbar-content").classList.remove("glass");
@@ -49,7 +53,7 @@ export default function Navbar() {
     }
 
     // 3. Move dot to current item position
-    dot.style.left = pos == 0 ? "calc(var(--20px) - 6px)" : length + 14 + "px";
+    dot.style.left = pos === 0 ? "calc(var(--20px) - 6px)" : length + 14 + "px";
     dot.style.width = links[pos].offsetWidth + "px";
   };
 
@@ -67,10 +71,11 @@ export default function Navbar() {
             onClick={() => {
               setNumber(pos);
               handleSelected(pos);
+              navigate(item.link);
             }}
             className="pageLink"
           >
-            <a href="#">{item}</a>
+            <a href="#">{item.text}</a>
           </div>
         ))}
         <span className="dot" id="dot"></span>

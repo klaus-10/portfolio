@@ -5,7 +5,10 @@ import "./Work.css";
 export default function Home() {
   return (
     <div className="work">
-      <h1>Work</h1>
+      <div className="work-title">
+        <h1>Hi.I'm Klaus.</h1>
+        <h1>A Software Engineer.</h1>
+      </div>
     </div>
   );
 }
