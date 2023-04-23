@@ -9,6 +9,8 @@ export default function Home() {
         <h1>Hi.I'm Klaus.</h1>
         <h1>A Software Engineer.</h1>
       </div>
+
+      <div className="work-container">{/* json with works */}</div>
     </div>
   );
 }

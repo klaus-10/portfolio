@@ -1,0 +1,32 @@
+{
+  "skills": [
+    { "name": "Css", "value": 1 },
+    { "name": "GitLab", "value": 1 },
+    { "name": "Html", "value": 7 },
+    { "name": "Java", "value": 1 },
+    { "name": "Jenkins", "value": 1 },
+    { "name": "Js", "value": 1 },
+    { "name": "MongoDB", "value": 1 },
+    { "name": "NodeJs", "value": 1 },
+    { "name": "React", "value": 1 },
+    { "name": "SQL", "value": 1 },
+    { "name": "GitHub", "value": 1 }
+  ],
+  "passions": [
+    {
+      "img": "",
+      "name": "Design",
+      "description": ""
+    },
+    {
+      "img": "",
+      "name": "Technology",
+      "description": ""
+    },
+    {
+      "img": "",
+      "name": "Story",
+      "description": ""
+    }
+  ]
+}

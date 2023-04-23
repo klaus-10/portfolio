@@ -1,0 +1,112 @@
+.about-title {
+  padding: 12rem 0 3rem;
+  position: relative;
+}
+
+.about-title h1 {
+  text-align: center;
+  font-size: var(--font-h1);
+  line-height: 100%;
+  letter-spacing: -2px;
+  color: white;
+}
+
+.about-title p {
+  text-align: center;
+  font-size: var(--font-h2);
+  line-height: 100%;
+  letter-spacing: -2px;
+  color: white;
+  font-weight: 100;
+}
+
+.about-me-desc h2 {
+  margin-top: var(--spacing-m);
+  margin-bottom: var(--spacing-xs);
+  font-size: var(--font-h2-display);
+  line-height: 110%;
+  font-family: var(--titleFont);
+  font-weight: 700;
+  color: var(--color-green400);
+}
+
+.about-me-desc p {
+  margin-top: var(--spacing-m);
+  margin-bottom: var(--spacing-xs);
+  font-size: var(--font-body);
+  line-height: 160%;
+  font-family: var(--titleFont);
+  font-weight: 700;
+  color: var(--color-mint);
+}
+
+/* // point section css */
+.about-point {
+  text-align: left;
+}
+.about-point {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  padding: var(--spacing-s) 0 var(--spacing-l);
+  grid-row-gap: var(--spacing-m);
+  margin: var(--spacing-xs) auto var(--spacing-l);
+  position: relative;
+  background: var(--color-white30);
+  backdrop-filter: blur(10px) saturate(1.3);
+  -webkit-backdrop-filter: blur(10px) saturate(1.3);
+
+  border-radius: var(--64px);
+  padding: var(--spacing-l) 0 calc(var(--spacing-l) + var(--42px));
+  margin: var(--spacing-xs) auto calc(var(--spacing-l) - 20px);
+
+  padding: var(--spacing-s) 0 var(--spacing-l);
+  grid-row-gap: var(--spacing-m);
+  margin: var(--spacing-xs) auto var(--spacing-l);
+  position: relative;
+  background: var(--color-white30);
+  backdrop-filter: blur(10px) saturate(1.3);
+  -webkit-backdrop-filter: blur(10px) saturate(1.3);
+}
+.grid-wrap {
+  margin: 0 var(--64px);
+}
+
+/* .entry-1,
+.entry-3 {
+  grid-column-start: 4;
+  grid-column-end: 13;
+}
+
+.entry-2,
+.entry-4 {
+  grid-column-start: 14;
+  grid-column-end: 23;
+} */
+
+@media screen and (max-width: 768px) {
+  .about-point {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: hsl(160.8, 23.8%, 20.6%);
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .grid-wrap {
+    margin: 0;
+  }
+}
+
+/* general css */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
