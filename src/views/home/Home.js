@@ -20,8 +20,8 @@ export default function Home() {
       </div>
 
       {/* // cursor */}
-      <div class="cursor rounded"></div>
-      <div class="cursor pointed"></div>
+      <div className="cursor rounded"></div>
+      <div className="cursor pointed"></div>
     </div>
   );
 }
