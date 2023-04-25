@@ -4,6 +4,8 @@
   background: var(--color-green800);
   display: flex;
   justify-content: center;
+
+  padding-bottom: 80px;
 }
 
 .outlet-container {

@@ -12,6 +12,44 @@
     { "name": "SQL", "value": 1, "desc": "" },
     { "name": "GitHub", "value": 1, "desc": "" }
   ],
+  "skills_2": [
+    {
+      "name": "Web Development",
+      "value": 1,
+      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "img": ""
+    },
+    {
+      "name": "Back-end Development",
+      "value": 1,
+      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "img": ""
+    },
+    {
+      "name": "Git Version Control",
+      "value": 7,
+      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "img": ""
+    },
+    {
+      "name": "App Design",
+      "value": 1,
+      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "img": ""
+    },
+    {
+      "name": "Database",
+      "value": 1,
+      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "img": ""
+    },
+    {
+      "name": "Teamwork",
+      "value": 1,
+      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "img": ""
+    }
+  ],
   "passions": [
     {
       "img": "https://source.unsplash.com/random",

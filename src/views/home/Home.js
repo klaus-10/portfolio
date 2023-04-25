@@ -6,6 +6,11 @@ import Navbar from "../../components/navbar/Navbar";
 import { init_pointer } from "../../utils/Utils";
 
 export default function Home() {
+  // navigate
+  let navigate = useNavigate();
+  //location
+  const location = useLocation();
+
   // cursor useEffect
   useEffect(() => {
     init_pointer({});

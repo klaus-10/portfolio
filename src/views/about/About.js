@@ -128,9 +128,9 @@ export default function About() {
       </div>
       <div className="grid-wrap flex-center">
         <div className="about-skill ww">
-          {data?.skills?.map((el, pos) => (
+          {data?.skills_2?.map((el, pos) => (
             // <div className="skill-item">
-            <Card title={el.name} subtitle={el.value} desc={el.desc} />
+            <Card key={pos + "v"} title={el.name} desc={el.desc} pos={pos} />
             // </div>
           ))}
         </div>

@@ -5,8 +5,13 @@
 
 @media screen and (max-width: 768px) {
   .ww {
-    width: 80%;
+    width: 80% !important;
   }
+}
+
+/* card section big or small */
+.big {
+  grid-row: span 2 / span 2;
 }
 
 /* ------------------------------------------------- */
@@ -243,5 +248,6 @@
 
 .about-skill {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--42px);
 }
