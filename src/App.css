@@ -47,3 +47,70 @@ h6 {
   font-family: var(--titleFont);
   font-weight: 700;
 }
+
+body,
+html {
+  font-family: var(--bodyFont);
+  font-size: var(--16px);
+  color: var(--color-text-primary);
+  background: var(--color-primary);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+  transition: background 0.2s linear;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: "liga" on;
+  font-feature-settings: "liga" on;
+  -moz-font-feature-settings: "liga" on;
+}
+
+/* cursor style */
+#pointer-dot {
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border: 2.5px solid white;
+  position: fixed;
+  border-radius: 4px;
+  z-index: 101;
+  pointer-events: none;
+  transition: border-color 0.5s;
+}
+
+#pointer-ring {
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  padding: 15px;
+  border: 2px solid #750c7e;
+  position: fixed;
+  border-radius: 100px;
+  z-index: 102;
+  pointer-events: none;
+}
+
+html {
+  cursor: none !important;
+}
+
+a {
+  cursor: none !important;
+}
+
+/* general css */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}

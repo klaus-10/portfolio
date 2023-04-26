@@ -1,4 +1,15 @@
 .home {
-  min-height: 150vh;
+  min-height: 100vh;
+  height: 100%;
   background: var(--color-green800);
+  display: flex;
+  justify-content: center;
+
+  padding-bottom: 80px;
+}
+
+.outlet-container {
+  max-width: 1600px;
+  width: 100%;
+  height: 100%;
 }

@@ -1,0 +1,70 @@
+{
+  "skills": [
+    { "name": "Css", "value": 1, "desc": "" },
+    { "name": "GitLab", "value": 1, "desc": "" },
+    { "name": "Html", "value": 7, "desc": "" },
+    { "name": "Java", "value": 1, "desc": "" },
+    { "name": "Jenkins", "value": 1, "desc": "" },
+    { "name": "Js", "value": 1, "desc": "" },
+    { "name": "MongoDB", "value": 1, "desc": "" },
+    { "name": "NodeJs", "value": 1, "desc": "" },
+    { "name": "React", "value": 1, "desc": "" },
+    { "name": "SQL", "value": 1, "desc": "" },
+    { "name": "GitHub", "value": 1, "desc": "" }
+  ],
+  "skills_2": [
+    {
+      "name": "Web Development",
+      "value": 1,
+      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "img": ""
+    },
+    {
+      "name": "Back-end Development",
+      "value": 1,
+      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "img": ""
+    },
+    {
+      "name": "Git Version Control",
+      "value": 7,
+      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "img": ""
+    },
+    {
+      "name": "App Design",
+      "value": 1,
+      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "img": ""
+    },
+    {
+      "name": "Database",
+      "value": 1,
+      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "img": ""
+    },
+    {
+      "name": "Teamwork",
+      "value": 1,
+      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "img": ""
+    }
+  ],
+  "passions": [
+    {
+      "img": "https://source.unsplash.com/random",
+      "name": "Design",
+      "description": " I take pleasure in creating visually appealing and functional solutions. My creativity knows no bounds, and I find inspiration in everything around me."
+    },
+    {
+      "img": "https://source.unsplash.com/random",
+      "name": "Technology",
+      "description": "I have a deep passion for technology, constantly exploring the latest advancements in the field. From coding to hardware, I strive to stay up-to-date and experiment with new tools and techniques. The limitless possibilities motivate and excite me to keep pushing my boundaries in my work."
+    },
+    {
+      "img": "https://source.unsplash.com/random",
+      "name": "Sport",
+      "description": "I have a deep passion for the gym as it allows me to not only stay physically fit, but also provides an outlet for mental clarity and stress relief. Each workout presents a new challenge, and the sense of accomplishment afterwards is truly rewarding."
+    }
+  ]
+}
