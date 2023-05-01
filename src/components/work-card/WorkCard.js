@@ -1,14 +1,31 @@
 import React from "react";
 
-import "./Work.css";
+import "./WorkCard.css";
 
-export default function WorkCard({ title, subtitle }) {
+export default function WorkCard({ title, subtitle, desc, link, img, pos }) {
   return (
-    <div className="work-card">
-      <div className="work-card-title">
-        <h3>{title}</h3>
-        <h5>{subtitle}</h5>
+    <a
+      href={link}
+      className={
+        [1, 2].includes(pos)
+          ? "workout-card-outline big-work"
+          : "workout-card-outline"
+      }
+    >
+      <div className="workout-card">
+        <div className="workout-card-info">
+          <div className="workout-card-info-title">
+            <h3>{title}</h3>
+            <h5>{subtitle}</h5>
+          </div>
+          <div className="workout-card-desc">
+            <p>{desc}</p>
+          </div>
+        </div>
+        <div className="workout-card-img">
+          <img src={img} alt="" />
+        </div>
       </div>
-    </div>
+    </a>
   );
 }

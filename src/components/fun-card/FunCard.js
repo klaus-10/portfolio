@@ -3,7 +3,6 @@ import React from "react";
 import "./FunCard.css";
 
 export default function FunCard({ title, subtitle, desc, link, img, pos }) {
-  if ([1, 2, 3, 4, 5].includes(pos)) console.log("ok: ", pos);
   return (
     <a
       href={link}

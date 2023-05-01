@@ -15,3 +15,9 @@
   letter-spacing: -2px;
   color: white;
 }
+
+.work-card-container {
+  display: grid;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+  gap: var(--42px);
+}

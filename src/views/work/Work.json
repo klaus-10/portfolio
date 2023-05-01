@@ -1,0 +1,46 @@
+{
+  "done": [
+    {
+      "name": "Spotify",
+      "value": 1,
+      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "link": "",
+      "github": "",
+      "img": ""
+    },
+    {
+      "name": "Yoxeen",
+      "value": 1,
+      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "link": "",
+      "github": "",
+      "img": ""
+    },
+    {
+      "name": "Disco",
+      "value": 7,
+      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "link": "",
+      "github": "",
+      "img": ""
+    },
+    {
+      "name": "Netflix",
+      "value": 1,
+      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "link": "",
+      "github": "",
+      "img": ""
+    }
+  ],
+  "progress": [
+    {
+      "name": "Yoxeen",
+      "value": 1,
+      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "link": "",
+      "github": "",
+      "img": ""
+    }
+  ]
+}
