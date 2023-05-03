@@ -205,7 +205,8 @@
   justify-content: space-between;
 }
 
-.passion-item {
+.passion-item,
+.work-page-item {
   width: 29.75%;
 }
 
@@ -233,7 +234,8 @@
 }
 
 @media screen and (max-width: 768px) {
-  .passion-item {
+  .passion-item,
+  .work-page-item {
     width: 100%;
     text-align: left !important;
   }

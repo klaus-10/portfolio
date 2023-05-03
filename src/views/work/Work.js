@@ -1,9 +1,21 @@
 import React from "react";
 import WorkCard from "../../components/work-card/WorkCard";
+import { useNavigate } from "react-router-dom";
 import data from "./Work.json";
 import "./Work.css";
 
-export default function Home() {
+export default function Work() {
+  // navigate
+  let navigate = useNavigate();
+
+  const handleOpenWork = (link) => {
+    console.log("click");
+    // navigate to the link page
+    console.log("/work/" + link);
+
+    navigate("/works/" + link);
+  };
+
   return (
     <div className="work">
       <div className="work-title">
@@ -38,6 +50,7 @@ export default function Home() {
               title={el.name}
               desc={el.desc}
               pos={pos}
+              click={() => handleOpenWork(el.link)}
             />
             // </div>
           ))}

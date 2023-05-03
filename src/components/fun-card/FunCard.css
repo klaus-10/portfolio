@@ -1,4 +1,4 @@
-.card-outline {
+/* .card-outline {
   grid-column: span 2 / span 2;
   border-radius: var(--radius-base);
   background: var(--color-white30);
@@ -20,7 +20,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  /* padding: var(--24px); */
   padding: var(--42px);
   position: relative;
   gap: var(--14px);
@@ -59,7 +58,6 @@
 .card h3 {
   font-size: var(--font-h5);
   font-weight: 700;
-  /* color: var(--color-text-primary); */
   color: var(--color-green400);
 
   position: relative;
@@ -70,4 +68,4 @@
   color: var(--color-mint);
   font-size: var(--font-link);
   font-weight: 600;
-}
+} */

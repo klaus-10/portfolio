@@ -6,7 +6,19 @@
       "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
       "link": "",
       "github": "",
-      "img": ""
+      "img": "",
+      "role": "Product designer, backend",
+      "team": ["name", "test"],
+      "timeline": "01-04-2023 / 15-04-2023",
+      "overview": "Il progetto nasce da un corso Universitario per il quale era necessario realizzare un'applicazione a piacere. Avendo sempre voluto realizzare un'app in ambito musicale o deciso di effettuare un clone di Spotify.",
+      "details": "L’applicazione è stata realizzata principalmente per permettere a chiunque di accedere al servizio in modo gratuito. Dunque non c’è una schermata iniziale di login ma si accede direttamente alla dashboard dell’applicativo. Il menu laterale permette di navigare nelle varie pagine mentre l’interno dell’app è composto principalmente da raccolte di canzoni suddivise per varie sezioni e categorie",
+      "feature": [
+        { "name": "Login", "img": "https://source.unsplash.com/random" },
+        { "name": "Track", "img": "https://source.unsplash.com/random" },
+        { "name": "Search", "img": "https://source.unsplash.com/random" },
+        { "name": "Playlist", "img": "https://source.unsplash.com/random" }
+      ],
+      "future_develop": "In conclusione l’app non è stata pensata solamente per essere una copia del servizio originale di Spotify, quanto più come una nuova piattaforma che potesse migliorare le caratteristiche di quella attuale. Le funzionalità future che saranno implementate riguardano:• Includere una pagina relativa ai concerti di un particolare artista o semplicemente quelli in una città particolare • Implementare la radio in quanto ci sono dei canali con molti ascolti che sicuramente farebbe aumentare il tempo di utilizzo dell’applicazione • Sfruttare meglio l’API resa disponibile da Spotify in modo da utilizzare il token generato per più chiamate e quindi utilizzare meno la soluzione attuale con rapid-ap"
     },
     {
       "name": "Yoxeen",
@@ -14,7 +26,19 @@
       "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
       "link": "",
       "github": "",
-      "img": ""
+      "img": "",
+      "role": "Product designer, backend",
+      "team": ["name", "test"],
+      "timeline": "01-04-2021 / 08-07-2022",
+      "overview": "Il progetto tratta il problema della mancanza di un'applicazione dedicata ai personal trainer in ambito professionale.",
+      "details": "L’applicazione è stata realizzata principalmente per permettere a chiunque di accedere al servizio in modo gratuito. Dunque non c’è una schermata iniziale di login ma si accede direttamente alla dashboard dell’applicativo. Il menu laterale permette di navigare nelle varie pagine mentre l’interno dell’app è composto principalmente da raccolte di canzoni suddivise per varie sezioni e categorie",
+      "feature": [
+        { "name": "Login", "img": "https://source.unsplash.com/random" },
+        { "name": "Track", "img": "https://source.unsplash.com/random" },
+        { "name": "Search", "img": "https://source.unsplash.com/random" },
+        { "name": "Playlist", "img": "https://source.unsplash.com/random" }
+      ],
+      "future_develop": "In conclusione l’app non è stata pensata solamente per essere una copia del servizio originale di Spotify, quanto più come una nuova piattaforma che potesse migliorare le caratteristiche di quella attuale. Le funzionalità future che saranno implementate riguardano:• Includere una pagina relativa ai concerti di un particolare artista o semplicemente quelli in una città particolare • Implementare la radio in quanto ci sono dei canali con molti ascolti che sicuramente farebbe aumentare il tempo di utilizzo dell’applicazione • Sfruttare meglio l’API resa disponibile da Spotify in modo da utilizzare il token generato per più chiamate e quindi utilizzare meno la soluzione attuale con rapid-ap"
     },
     {
       "name": "Disco",
@@ -22,7 +46,19 @@
       "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
       "link": "",
       "github": "",
-      "img": ""
+      "img": "",
+      "role": "Product designer, backend",
+      "team": ["name", "test"],
+      "timeline": "01-04-2021 / 08-07-2022",
+      "overview": "Il progetto tratta il problema della mancanza di un'applicazione dedicata ai personal trainer in ambito professionale.",
+      "details": "L’applicazione è stata realizzata principalmente per permettere a chiunque di accedere al servizio in modo gratuito. Dunque non c’è una schermata iniziale di login ma si accede direttamente alla dashboard dell’applicativo. Il menu laterale permette di navigare nelle varie pagine mentre l’interno dell’app è composto principalmente da raccolte di canzoni suddivise per varie sezioni e categorie",
+      "feature": [
+        { "name": "Login", "img": "https://source.unsplash.com/random" },
+        { "name": "Track", "img": "https://source.unsplash.com/random" },
+        { "name": "Search", "img": "https://source.unsplash.com/random" },
+        { "name": "Playlist", "img": "https://source.unsplash.com/random" }
+      ],
+      "future_develop": "In conclusione l’app non è stata pensata solamente per essere una copia del servizio originale di Spotify, quanto più come una nuova piattaforma che potesse migliorare le caratteristiche di quella attuale. Le funzionalità future che saranno implementate riguardano:• Includere una pagina relativa ai concerti di un particolare artista o semplicemente quelli in una città particolare • Implementare la radio in quanto ci sono dei canali con molti ascolti che sicuramente farebbe aumentare il tempo di utilizzo dell’applicazione • Sfruttare meglio l’API resa disponibile da Spotify in modo da utilizzare il token generato per più chiamate e quindi utilizzare meno la soluzione attuale con rapid-ap"
     },
     {
       "name": "Netflix",
@@ -30,7 +66,19 @@
       "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
       "link": "",
       "github": "",
-      "img": ""
+      "img": "",
+      "role": "Product designer, backend",
+      "team": ["name", "test"],
+      "timeline": "01-04-2021 / 08-07-2022",
+      "overview": "Il progetto tratta il problema della mancanza di un'applicazione dedicata ai personal trainer in ambito professionale.",
+      "details": "L’applicazione è stata realizzata principalmente per permettere a chiunque di accedere al servizio in modo gratuito. Dunque non c’è una schermata iniziale di login ma si accede direttamente alla dashboard dell’applicativo. Il menu laterale permette di navigare nelle varie pagine mentre l’interno dell’app è composto principalmente da raccolte di canzoni suddivise per varie sezioni e categorie",
+      "feature": [
+        { "name": "Login", "img": "https://source.unsplash.com/random" },
+        { "name": "Track", "img": "https://source.unsplash.com/random" },
+        { "name": "Search", "img": "https://source.unsplash.com/random" },
+        { "name": "Playlist", "img": "https://source.unsplash.com/random" }
+      ],
+      "future_develop": "In conclusione l’app non è stata pensata solamente per essere una copia del servizio originale di Spotify, quanto più come una nuova piattaforma che potesse migliorare le caratteristiche di quella attuale. Le funzionalità future che saranno implementate riguardano:• Includere una pagina relativa ai concerti di un particolare artista o semplicemente quelli in una città particolare • Implementare la radio in quanto ci sono dei canali con molti ascolti che sicuramente farebbe aumentare il tempo di utilizzo dell’applicazione • Sfruttare meglio l’API resa disponibile da Spotify in modo da utilizzare il token generato per più chiamate e quindi utilizzare meno la soluzione attuale con rapid-ap"
     }
   ],
   "progress": [
@@ -38,9 +86,21 @@
       "name": "Yoxeen",
       "value": 1,
       "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
-      "link": "",
+      "link": "yoxeen",
       "github": "",
-      "img": ""
+      "img": "",
+      "role": "Product designer, backend",
+      "team": ["name", "test"],
+      "timeline": "01-04-2021 / 08-07-2022",
+      "overview": "Il progetto tratta il problema della mancanza di un'applicazione dedicata ai personal trainer in ambito professionale.",
+      "details": "L’applicazione è stata realizzata principalmente per permettere a chiunque di accedere al servizio in modo gratuito. Dunque non c’è una schermata iniziale di login ma si accede direttamente alla dashboard dell’applicativo. Il menu laterale permette di navigare nelle varie pagine mentre l’interno dell’app è composto principalmente da raccolte di canzoni suddivise per varie sezioni e categorie",
+      "feature": [
+        { "name": "Login", "img": "https://source.unsplash.com/random" },
+        { "name": "Track", "img": "https://source.unsplash.com/random" },
+        { "name": "Search", "img": "https://source.unsplash.com/random" },
+        { "name": "Playlist", "img": "https://source.unsplash.com/random" }
+      ],
+      "future_develop": "In conclusione l’app non è stata pensata solamente per essere una copia del servizio originale di Spotify, quanto più come una nuova piattaforma che potesse migliorare le caratteristiche di quella attuale. Le funzionalità future che saranno implementate riguardano:• Includere una pagina relativa ai concerti di un particolare artista o semplicemente quelli in una città particolare • Implementare la radio in quanto ci sono dei canali con molti ascolti che sicuramente farebbe aumentare il tempo di utilizzo dell’applicazione • Sfruttare meglio l’API resa disponibile da Spotify in modo da utilizzare il token generato per più chiamate e quindi utilizzare meno la soluzione attuale con rapid-ap"
     }
   ]
 }

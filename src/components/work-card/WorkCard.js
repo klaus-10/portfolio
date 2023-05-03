@@ -2,7 +2,15 @@ import React from "react";
 
 import "./WorkCard.css";
 
-export default function WorkCard({ title, subtitle, desc, link, img, pos }) {
+export default function WorkCard({
+  title,
+  subtitle,
+  desc,
+  link,
+  img,
+  pos,
+  click,
+}) {
   return (
     <a
       href={link}
@@ -11,6 +19,7 @@ export default function WorkCard({ title, subtitle, desc, link, img, pos }) {
           ? "workout-card-outline big-work"
           : "workout-card-outline"
       }
+      onClick={click}
     >
       <div className="workout-card">
         <div className="workout-card-info">
