@@ -61,11 +61,11 @@ export default function WorkPage() {
       </div>
 
       <div className="image">
-        <img src="https://source.unsplash.com/random" alt="" />
+        <img src={item?.first_img} alt="" />
       </div>
 
       <div className="grid-wrap flex-center">
-        <div className="text-max-width space">
+        <div className="text-max-width space inner_widht">
           <div className="about-title2">
             <h1>Overview.</h1>
           </div>
@@ -77,7 +77,7 @@ export default function WorkPage() {
         <img src="https://source.unsplash.com/random" alt="" />
       </div>
 
-      {item?.overview && (
+      {/* {item?.overview && (
         <div className="grid-wrap flex-center">
           <div className="text-max-width space">
             <div className="about-title2">
@@ -86,7 +86,7 @@ export default function WorkPage() {
             <p>{item?.overview}</p>
           </div>
         </div>
-      )}
+      )} */}
 
       {item?.feature && (
         <>

@@ -14,7 +14,13 @@ export default function Fun() {
         <div className="about-skill ww">
           {data?.skills_2?.map((el, pos) => (
             // <div className="skill-item">
-            <FunCard key={pos + "v"} title={el.name} desc={el.desc} pos={pos} />
+            <FunCard
+              key={pos + "v"}
+              title={el.name}
+              desc={el.desc}
+              pos={pos}
+              img={el.img}
+            />
             // </div>
           ))}
         </div>

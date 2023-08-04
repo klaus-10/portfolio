@@ -17,16 +17,12 @@ export default function About() {
 
           <div className="about-me-desc ww">
             {/* <h3>...</h3> */}
-            <h2>
-              Sono uno sviluppatore informatico in ambiente machine learning
-            </h2>
+            <h2>Hello there! My name is Klaus.</h2>
             <p>
-              Nato a Gallarate nel 1999. Dopo la laurea ho trovato lavoro come
-              Backend developer presso una società informatica in ambito
-              finanziario, dove sono stato aggregato al team di sviluppo.
-              Tutt'ora il mio ambito lavorativo è questo anche se nel mentre
-              cerco sempre di tenermi aggiornato sulle recenti tecnologie in
-              ambito IT.
+              I am a software developer with a passion for technology, sports,
+              and knowledge. I have been working in the IT industry for about a
+              year now, and I am excited to share with you some of my
+              experiences and skills.
             </p>
             {/* <img src="https://source.unsplash.com/random" /> */}
           </div>
@@ -37,14 +33,13 @@ export default function About() {
           <div className="about-me-collaborate-desc ww">
             {/* <h3>...</h3> */}
             <h2>
-              Let's collaborate if you're committed to sustainability,
-              education, equality, or carbon neutrality.
+              Let's collaborate! Contact me to create something amazing together
+              or to contribute to a project.
             </h2>
             <p>
-              I believe we should leave this Earth as good as or better than we
-              found it for future generations; my goal is to contribute to those
-              ideals in whatever way I can. If you feel the same, I'd love to
-              talk.
+              Collaboration is at the core of every successful project, and I
+              believe in the importance of creating a collaborative environment
+              where the team can work together to achieve common goals.
             </p>
             {/* <img src="https://source.unsplash.com/random" /> */}
           </div>
@@ -57,40 +52,44 @@ export default function About() {
             <div>01</div>
             <h3>Make it</h3>
             <p>
-              I sketch wireframes and make prototypes. Talking through tactile
-              designs existing in the browser is worth its weight. Design tools
-              only carry you so far; the rest should be realized with a link my
-              team can rally around.
+              To start a project, creating a solid development plan is
+              essential. For this reason, I consider it essential to dedicate
+              time to creating prototypes in order to have a clear vision of the
+              application as a whole and ensure optimal development.
+              Collaboration between team members is equally important and can be
+              facilitated by adequate initial design.
             </p>
           </div>
           <div className="point-item entry-2">
             <div className="point-count">02</div>
-            <h3>Make it</h3>
+            <h3>Continuous Integration and Deployment</h3>
             <p>
-              I sketch wireframes and make prototypes. Talking through tactile
-              designs existing in the browser is worth its weight. Design tools
-              only carry you so far; the rest should be realized with a link my
-              team can rally around.
+              I believe in the value of continuous integration and deployment to
+              streamline the software development process. I have experience
+              using tools like Jenkins and GitHub Actions to automate builds and
+              deployments, making the development process more efficient and
+              error-free.
             </p>
           </div>
           <div className="point-item entry-3">
             <div>03</div>
-            <h3>Make it</h3>
+            <h3>Agile Methodologies</h3>
             <p>
-              I sketch wireframes and make prototypes. Talking through tactile
-              designs existing in the browser is worth its weight. Design tools
-              only carry you so far; the rest should be realized with a link my
-              team can rally around.
+              I am well-versed in agile methodologies, such as Scrum and Kanban,
+              and I believe in their effectiveness for managing projects. I have
+              experience working in agile teams and using tools like Jira and
+              Trello to track progress and ensure timely delivery.
             </p>
           </div>
           <div className="point-item entry-4">
             <div>04</div>
-            <h3>Make it</h3>
+            <h3>Learning and Growth</h3>
             <p>
-              I sketch wireframes and make prototypes. Talking through tactile
-              designs existing in the browser is worth its weight. Design tools
-              only carry you so far; the rest should be realized with a link my
-              team can rally around.
+              I am committed to continuous learning and growth, both personally
+              and professionally. I regularly attend conferences, workshops, and
+              online courses to stay up-to-date with the latest industry trends
+              and technologies. I also enjoy mentoring and helping others learn
+              and grow in their careers.
             </p>
           </div>
         </div>
@@ -130,7 +129,13 @@ export default function About() {
         <div className="about-skill ww">
           {data?.skills_2?.map((el, pos) => (
             // <div className="skill-item">
-            <Card key={pos + "v"} title={el.name} desc={el.desc} pos={pos} />
+            <Card
+              key={pos + "v"}
+              title={el.name}
+              desc={el.desc}
+              pos={pos}
+              img={el.img}
+            />
             // </div>
           ))}
         </div>

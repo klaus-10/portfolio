@@ -17,37 +17,37 @@
       "name": "Web Development",
       "value": 1,
       "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
-      "img": ""
+      "img": "public"
     },
     {
       "name": "Back-end Development",
       "value": 1,
       "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
-      "img": ""
+      "img": "code"
     },
     {
       "name": "Git Version Control",
       "value": 7,
       "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
-      "img": ""
+      "img": "account_tree"
     },
     {
       "name": "App Design",
       "value": 1,
       "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
-      "img": ""
+      "img": "draw"
     },
     {
       "name": "Database",
       "value": 1,
       "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
-      "img": ""
+      "img": "database"
     },
     {
       "name": "Teamwork",
       "value": 1,
       "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
-      "img": ""
+      "img": "groups"
     }
   ],
   "passions": [

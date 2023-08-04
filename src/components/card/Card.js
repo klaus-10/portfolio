@@ -19,7 +19,8 @@ export default function Card({ title, subtitle, desc, link, img, pos }) {
           </div>
         </div>
         <div className="card-img">
-          <img src={img} alt="" />
+          {/* <img src={img} alt="" /> */}
+          <span class="material-symbols-outlined">{img}</span>
         </div>
       </div>
     </a>

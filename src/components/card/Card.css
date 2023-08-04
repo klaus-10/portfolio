@@ -37,13 +37,18 @@
 }
 
 .card-img {
-  border-radius: 50%;
+  /* border-radius: 50%;
   overflow: hidden;
   height: 100%;
   display: flex;
   align-items: center;
   border: solid 1px var(--color-light-border);
-  flex: auto;
+  flex: auto; */
+  background: #1f322a;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  padding: 20px;
 }
 
 .card-img img {
@@ -72,4 +77,9 @@
   color: var(--color-mint);
   font-size: var(--font-link);
   font-weight: 600;
+}
+
+.card-img span {
+  font-size: 70px;
+  color: white;
 }
