@@ -113,20 +113,39 @@
       "name": "Yoxeen",
       "value": 1,
       "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
-      "link": "yoxeen",
+      "link": "",
       "github": "",
-      "first_img": "https://drive.google.com/uc?export=view&id=1bvaXLtQOfS3DERa7EKxu9hm8S4Wbe3pm",
+      "img": "",
       "role": "Product designer, backend",
       "team": ["name", "test"],
       "timeline": "01-04-2021 / 08-07-2022",
-      "overview": "The project is an app designed for personal trainers and fitness enthusiasts that allows them to create their own personalized workout routine for the gym. The app has a variety of features including a function to locate personal trainers nearby. It also allows users to create a customized workout routine from a database of exercises available in 5 different languages including French, Spanish, German, Japanese, and Italian. Once the workout routine is created, the user can print a PDF of it or share it with others. The app also features a tool for tracking progress, which analyzes the quality of the workout routine and provides a report with graphs for each macro category. In addition to this, the app offers the ability to create a customized diet plan from a database of foods specifically designed for athletes, again available in 5 different languages. Users can also consult a regularly updated blog for fitness tips and advice. Lastly, users can modify their own profiles, providing a fully customizable experience tailored to their own fitness goals and needs. With this app, personal trainers and fitness enthusiasts alike can have access to an all-in-one solution for their workout and dietary needs.",
+      "overview": "Il progetto tratta il problema della mancanza di un'applicazione dedicata ai personal trainer in ambito professionale.",
       "details": "L’applicazione è stata realizzata principalmente per permettere a chiunque di accedere al servizio in modo gratuito. Dunque non c’è una schermata iniziale di login ma si accede direttamente alla dashboard dell’applicativo. Il menu laterale permette di navigare nelle varie pagine mentre l’interno dell’app è composto principalmente da raccolte di canzoni suddivise per varie sezioni e categorie",
       "feature": [
         { "name": "Login", "img": "https://source.unsplash.com/random" },
-        { "name": "Track", "img": "https://source.unsplash.com/random" },
-        { "name": "Search", "img": "https://source.unsplash.com/random" },
-        { "name": "Playlist", "img": "https://source.unsplash.com/random" }
+        {
+          "name": "Workout builder",
+          "img": "https://source.unsplash.com/random"
+        },
+        { "name": "Diet Build", "img": "https://source.unsplash.com/random" },
+        {
+          "name": "Multilanguage",
+          "img": "https://source.unsplash.com/random"
+        },
+        { "name": "Find PT", "img": "https://source.unsplash.com/random" },
+        { "name": "Free", "img": "https://source.unsplash.com/random" }
       ],
+      "technology": [
+        {
+          "name": "Authentication",
+          "desc": "Per la parte relativa all'autenticazione è stato utilizzato Firebase per la gestione delle credenziali di accesso e dello stacco dello user Id. Successivamente lato server viene generato il Jwt token passato al client."
+        },
+        { "name": "", "desc": "" },
+        { "name": "", "desc": "" },
+        { "name": "", "desc": "" },
+        { "name": "", "desc": "" }
+      ],
+      "link": "yoxeen",
       "future_develop": "In conclusione l’app non è stata pensata solamente per essere una copia del servizio originale di Spotify, quanto più come una nuova piattaforma che potesse migliorare le caratteristiche di quella attuale. Le funzionalità future che saranno implementate riguardano:• Includere una pagina relativa ai concerti di un particolare artista o semplicemente quelli in una città particolare • Implementare la radio in quanto ci sono dei canali con molti ascolti che sicuramente farebbe aumentare il tempo di utilizzo dell’applicazione • Sfruttare meglio l’API resa disponibile da Spotify in modo da utilizzare il token generato per più chiamate e quindi utilizzare meno la soluzione attuale con rapid-ap"
     }
   ]

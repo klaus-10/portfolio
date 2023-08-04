@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./TemplateCard.css";
+import BasicModal from "../model/Modal";
 
 export default function TemplateCard({
   title,

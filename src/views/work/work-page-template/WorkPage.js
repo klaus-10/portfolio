@@ -4,12 +4,16 @@ import data from "../Work.json";
 
 import "./WorkPage.css";
 import TemplateCard from "../../../components/template-card/TemplateCard";
+import BasicModal from "../../../components/model/Modal";
 
 export default function WorkPage() {
   let { name } = useParams();
 
   const [workList, setWorkList] = useState([...data?.done, ...data?.progress]);
   const [item, setItem] = useState();
+
+  const [openModalVal, setOpenModalVal] = useState(false);
+  const [featureItem, setFeatureItem] = useState({});
 
   useEffect(() => {
     for (let i = 0; i < workList.length; i++) {
@@ -25,7 +29,10 @@ export default function WorkPage() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }, []);
 
-  console.log(item);
+  const handleOpenModalVal = () => {
+    setOpenModalVal(!openModalVal);
+    if (!openModalVal) setFeatureItem({});
+  };
 
   return (
     <div className="work-page">
@@ -112,12 +119,22 @@ export default function WorkPage() {
                 //   </p>
                 // </div>
 
-                <TemplateCard key={pos + "s"} title={el.name} img={el?.img} />
+                <div onClick={() => setFeatureItem()}>
+                  <TemplateCard key={pos + "s"} title={el.name} img={el?.img} />
+                </div>
               ))}
             </div>
           </div>
         </>
       )}
+
+      <BasicModal
+        title={featureItem?.name}
+        desc={featureItem?.desc}
+        img={featureItem?.img}
+        state={openModalVal}
+        openFunction={handleOpenModalVal}
+      />
     </div>
   );
 }
