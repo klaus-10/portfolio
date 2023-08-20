@@ -3,81 +3,171 @@
     {
       "name": "Spotify",
       "value": 1,
-      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "desc": "Simple Spotify app clone with some extra features",
       "link": "",
       "github": "",
       "img": "",
       "role": "Product designer, backend",
       "team": ["name", "test"],
       "timeline": "01-04-2023 / 15-04-2023",
-      "overview": "Il progetto nasce da un corso Universitario per il quale era necessario realizzare un'applicazione a piacere. Avendo sempre voluto realizzare un'app in ambito musicale o deciso di effettuare un clone di Spotify.",
+      "overview": "Il progetto nasce da un corso Universitario per il quale era necessario realizzare un'applicazione a piacere. Avendo sempre voluto realizzare un'app in ambito musicale ho deciso di effettuare un clone di Spotify.",
       "details": "L’applicazione è stata realizzata principalmente per permettere a chiunque di accedere al servizio in modo gratuito. Dunque non c’è una schermata iniziale di login ma si accede direttamente alla dashboard dell’applicativo. Il menu laterale permette di navigare nelle varie pagine mentre l’interno dell’app è composto principalmente da raccolte di canzoni suddivise per varie sezioni e categorie",
       "feature": [
-        { "name": "Login", "img": "https://source.unsplash.com/random" },
-        { "name": "Track", "img": "https://source.unsplash.com/random" },
-        { "name": "Search", "img": "https://source.unsplash.com/random" },
-        { "name": "Playlist", "img": "https://source.unsplash.com/random" }
+        {
+          "name": "Login",
+          "img": "https://source.unsplash.com/random",
+          "desc": "Il login è possibile effettuarlo solo ed esclusivamente se si è in possesso di un account premium spotify. In questo modo sarà possibile utilizzare le api rese disponibili dal servizio."
+        },
+        {
+          "name": "Search song",
+          "img": "https://source.unsplash.com/random",
+          "desc": "Il sistema permette un servizio di ricerca delel canzoni, artisti, album con ricerche correlate.",
+          "descFeature": []
+        },
+
+        {
+          "name": "Home",
+          "img": "https://source.unsplash.com/random",
+          "desc": "In questa sezione l'utente si ritroverà nella HomePage dell'app all'interno delal quale potrà effettuare una vera propria 'Discovery' delle traccie in primo piano.",
+          "descFeature": []
+        },
+        {
+          "name": "Library",
+          "img": "https://source.unsplash.com/random",
+          "desc": "Una volta effettuato l'accesso sarà poi possibile visualizzare la propria libreria spotify. Manca ancora da integrare il cambio api da quelle di Rapid Api a quelle di Spotify per l'ascolto della musica.",
+          "descFeature": []
+        },
+        {
+          "name": "Raido",
+          "img": "https://source.unsplash.com/random",
+          "desc": "Questa feature è ancoa in fase beta, ma sarebbe fantastico poter ascoltare le stazioni radio principali del proprio paese!",
+          "descFeature": []
+        },
+        {
+          "name": "Concert",
+          "img": "https://source.unsplash.com/random",
+          "desc": "Anche questa sezione è in fase beta, ma l'idea ocnsiste di fornire un servizio con tutti gli eventi inerenti alal propria zona. Inoltre sarà possibile cercare l'evento per nome, artista, città e paese, ottenere informazioni e molto altro.",
+          "descFeature": []
+        }
       ],
       "technology": [
         {
-          "name": "Authentication",
-          "desc": "Per la parte relativa all'autenticazione è stato utilizzato Firebase per la gestione delle credenziali di accesso e dello stacco dello user Id. Successivamente lato server viene generato il Jwt token passato al client."
+          "name": "Authentication calls",
+          "desc": "L'autenticazione è stata realizzata utilizzando il token di accesso disponibile nella pagina sviluppatore di spotify. Successivamente è stato utilizzato un altro token per RapidApi per recuperare l'mp3 relativo alle canzoni cercate."
         },
-        { "name": "", "desc": "" },
-        { "name": "", "desc": "" },
-        { "name": "", "desc": "" },
-        { "name": "", "desc": "" }
+        {
+          "name": "Client",
+          "desc": "L'interfaccia utente è stataprogettata e realizzata in ReactJs."
+        },
+        {
+          "name": "Design",
+          "desc": "The entire application was made with vanilla css style following the original Spotify design and palette."
+        }
       ]
     },
     {
       "name": "Yoxeen",
       "value": 1,
-      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
-      "link": "",
+      "desc": "Sistema di supporto all'allenamento in palestra, con funzionalità di creazione di schede d'allenamento e dieta.",
+      "link": "yoxeen",
       "github": "",
       "img": "",
       "role": "Product designer, backend",
       "team": ["name", "test"],
       "timeline": "01-04-2021 / 08-07-2022",
-      "overview": "Il progetto tratta il problema della mancanza di un'applicazione dedicata ai personal trainer in ambito professionale.",
-      "details": "L’applicazione è stata realizzata principalmente per permettere a chiunque di accedere al servizio in modo gratuito. Dunque non c’è una schermata iniziale di login ma si accede direttamente alla dashboard dell’applicativo. Il menu laterale permette di navigare nelle varie pagine mentre l’interno dell’app è composto principalmente da raccolte di canzoni suddivise per varie sezioni e categorie",
+      "overview": "Il progetto è nato per permettere a chiunque di avere la possibilità di creare la propria scheda di allenamento in quanto durante la prima fase di progettazione avevo notato che non c'erano ancora applicazioni che permettessero di svolgere questa funzionalità in modo gratuito.",
+      "details": "Il sistema permette di effettuare l'accesso e salvare i propri progressi recuperando statistica sull'allenamento, salvando la propria routine e tenere sotto controllo i dati giornalieri derivanti dai sensori.",
       "feature": [
-        { "name": "Login", "img": "https://source.unsplash.com/random" },
+        {
+          "name": "Login",
+          "img": "https://source.unsplash.com/random",
+          "desc": "La parte di login è stata implementata attraverso l'utilizzo di Firebase e JWT token e permette ad un utente generico di accedere e avere un account su cui salvarsi tutti i progressi."
+        },
         {
           "name": "Workout builder",
-          "img": "https://source.unsplash.com/random"
+          "img": "https://source.unsplash.com/random",
+          "desc": "In questa sezione è possibile accedere all'interno dell'app come profilo utente o allenatore. Sarà necessario compilare il form di registrazione per poter eseguire correttamente l'accesso."
         },
-        { "name": "Diet Build", "img": "https://source.unsplash.com/random" },
+
+        {
+          "name": "Diet Build",
+          "img": "https://source.unsplash.com/random",
+          "desc": "In questa sezione un utente generico è in grado di procedere alla creazione di una scheda di allenamento.",
+          "descFeature": [
+            "Creazione scheda",
+            "Modifica",
+            "Salvataggio",
+            "Esportazione in pdf",
+            "Condivisione con un altro utente"
+          ]
+        },
         {
           "name": "Multilanguage",
-          "img": "https://source.unsplash.com/random"
+          "img": "https://source.unsplash.com/random",
+          "desc": "Questa funzionalità permette all'utente di scegliere la propria lingua. Non è del tutto implementato ma a livello di esercizi da inserire nella scheda e la personalizzazione della propria dieta possono essere fatte in diverse lingue.",
+          "descFeature": []
         },
-        { "name": "Find PT", "img": "https://source.unsplash.com/random" },
-        { "name": "Free", "img": "https://source.unsplash.com/random" }
+        {
+          "name": "Statistiche",
+          "img": "https://source.unsplash.com/random",
+          "desc": "All'interno dell'app sarà possibile tenere traccia di tutti i dati e successivamente guardare le statistiche generate.",
+          "descFeature": [
+            "Macro Chart",
+            "Weight chart",
+            "Workout chart",
+            "Google Fit Daily data"
+          ]
+        },
+        {
+          "name": "Find PT",
+          "img": "https://source.unsplash.com/random",
+          "desc": "Nel caso avessi la necessità di trovare un personal trainer nella tuo zona sarà possibile effettuarlo andando nella sezione apposita e cercando semplicemente la città. Nel caso in cui non dovessero esserci pt saranno visualizzati i più vicini entro un raggio di 50km.",
+          "descFeature": []
+        },
+        {
+          "name": "Free",
+          "img": "https://source.unsplash.com/random",
+          "desc": "L'app è stata progettata per essere gratuita a tutti coloro che hanno la necessità di iniziare l'approccio all'interno del mondo del fitness. Per qualsiasi idea di miglioramente o qualche feature da inserire vi prego di segnalarlo al seguente link.",
+          "link": "Link di segnalazione",
+          "descFeature": []
+        }
       ],
       "technology": [
         {
           "name": "Authentication",
           "desc": "Per la parte relativa all'autenticazione è stato utilizzato Firebase per la gestione delle credenziali di accesso e dello stacco dello user Id. Successivamente lato server viene generato il Jwt token passato al client."
         },
-        { "name": "", "desc": "" },
-        { "name": "", "desc": "" },
-        { "name": "", "desc": "" },
-        { "name": "", "desc": "" }
+        {
+          "name": "Database",
+          "desc": "MongoDB è il principale db utilizzato per il savlataggio dei dati. Le scelte su questo database sono state per la sua scalabilità e gestione di grandi quantità di dati."
+        },
+        {
+          "name": "Client",
+          "desc": "L'interfaccia utente è stataprogettata e realizzata in ReactJs."
+        },
+        {
+          "name": "Backend",
+          "desc": "Il sistema è stato sviluppato attraverso NodeJs."
+        },
+        {
+          "name": "Design",
+          "desc": "The entire application was made following the Material Design tips using Material UI js library in addition to vanilla css style."
+        }
       ],
-      "future_develop": "In conclusione l’app non è stata pensata solamente per essere una copia del servizio originale di Spotify, quanto più come una nuova piattaforma che potesse migliorare le caratteristiche di quella attuale. Le funzionalità future che saranno implementate riguardano:• Includere una pagina relativa ai concerti di un particolare artista o semplicemente quelli in una città particolare • Implementare la radio in quanto ci sono dei canali con molti ascolti che sicuramente farebbe aumentare il tempo di utilizzo dell’applicazione • Sfruttare meglio l’API resa disponibile da Spotify in modo da utilizzare il token generato per più chiamate e quindi utilizzare meno la soluzione attuale con rapid-ap"
+      "demo": "link to demo video",
+      "future_develop": "L'app è stata pensata per essere un servizio gratuito per la gestione dell'allenamento."
     },
     {
       "name": "Disco",
       "value": 7,
-      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
-      "link": "",
+      "desc": "Sistema di gestione degli eventi nel locale",
+      "link": "disco",
       "github": "",
       "img": "",
       "role": "Product designer, backend",
       "team": ["name", "test"],
       "timeline": "01-04-2021 / 08-07-2022",
-      "overview": "Il progetto tratta il problema della mancanza di un'applicazione dedicata ai personal trainer in ambito professionale.",
+      "overview": "Il progetto nasce con l'idea di creare un servizio per locali notturni prenotazioni. Statistiche, ingressi, omaggi, liste sono solo alcuni dei concetti che vengono riportati nel sistema che vengono utilizzati ogni serata da tutte le discoteche. L'applicazione permette di semplificare il tutto e tenere sotto controllo il proprio locale.",
       "details": "L’applicazione è stata realizzata principalmente per permettere a chiunque di accedere al servizio in modo gratuito. Dunque non c’è una schermata iniziale di login ma si accede direttamente alla dashboard dell’applicativo. Il menu laterale permette di navigare nelle varie pagine mentre l’interno dell’app è composto principalmente da raccolte di canzoni suddivise per varie sezioni e categorie",
       "feature": [
         { "name": "Login", "img": "https://source.unsplash.com/random" },
@@ -88,65 +178,226 @@
       "future_develop": "In conclusione l’app non è stata pensata solamente per essere una copia del servizio originale di Spotify, quanto più come una nuova piattaforma che potesse migliorare le caratteristiche di quella attuale. Le funzionalità future che saranno implementate riguardano:• Includere una pagina relativa ai concerti di un particolare artista o semplicemente quelli in una città particolare • Implementare la radio in quanto ci sono dei canali con molti ascolti che sicuramente farebbe aumentare il tempo di utilizzo dell’applicazione • Sfruttare meglio l’API resa disponibile da Spotify in modo da utilizzare il token generato per più chiamate e quindi utilizzare meno la soluzione attuale con rapid-ap"
     },
     {
-      "name": "Spotify-clone",
-      "value": 1,
-      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
-      "link": "",
+      "name": "University Bachelor Thesis",
+      "value": 2,
+      "desc": "Progetto di ricerca universitario che consiste nello sviluppare un algoritmo di routing adattato ai veicoli di micromobilità in modo da trovare il percorso più breve, sicuro e basati sulle preference di input dell'utente.",
+      "link": "thesis",
       "github": "",
       "img": "",
-      "role": "Product designer, backend",
-      "team": ["name", "test"],
-      "timeline": "01-04-2021 / 08-07-2022",
-      "overview": "Il progetto tratta il problema della mancanza di un'applicazione dedicata ai personal trainer in ambito professionale.",
-      "details": "L’applicazione è stata realizzata principalmente per permettere a chiunque di accedere al servizio in modo gratuito. Dunque non c’è una schermata iniziale di login ma si accede direttamente alla dashboard dell’applicativo. Il menu laterale permette di navigare nelle varie pagine mentre l’interno dell’app è composto principalmente da raccolte di canzoni suddivise per varie sezioni e categorie",
+      "role": "Full stack developer",
+      "team": ["me"],
+      "timeline": "01-04-2023 / 28-09-2023",
+      "overview": "Il progetto nasce con l'idea di permettere ad un utente di un mezzo di micromobilità di utilizzarlo nel modo più sicuro possibile. Difatti sono vari i problemi che circondano questa nuova tipologia di trasporto e la sicurezza per l'utente è un tema molto importate. Per questo motivo è stato sviluppato un algoritmo di routing basato principalmente sul peso dell'arco che tenesse conto di tutte le variabili che possono esserci durante il percorso.",
+      "details": "Inizialmente il sistema era stato progettato per essere eseguito localmente, ma con successive riflessioni basate anche sugli sviluppi futuri la scelta di utilizzare un database e non la memoria del computer per la costrizione del grafo ha determinato gli sviluppi. Dunuqe il database scelta è stato PostgreSql con l'estensione di PostGis e per effettuare le interrogazioni si è sviluppato un'applicazione SpringBoot in Java. Il progetto si è poi evoluto con un interfaccia grafica sviluppata in ReactJs per la visualizzazione reale del percorso.",
       "feature": [
-        { "name": "Login", "img": "https://source.unsplash.com/random" },
-        { "name": "Track", "img": "https://source.unsplash.com/random" },
-        { "name": "Search", "img": "https://source.unsplash.com/random" },
-        { "name": "Playlist", "img": "https://source.unsplash.com/random" }
+        {
+          "name": "Routing",
+          "img": "https://source.unsplash.com/random",
+          "desc": "La main feature del sistema si basa sulla ricerca del percorso ottimale più breve. Fino a questo punto l'algoritmo utilizzato si basa solo ed esclusivamente sulle strade urbane dell cità, comprendendo tutti i percorsi esistenti percorribili. Dunque non si tiene conto dei mezzi di trasporto come mezzo intermedio di spostamento.",
+          "descFeature": []
+        },
+        {
+          "name": "Form",
+          "img": "https://source.unsplash.com/random",
+          "desc": "In questa parte della pagina ritroviamo il componente relativo al form che permette all'utente di scegliere velocemente il mezzo di trasporto e i punti del percorso.",
+          "descFeature": []
+        },
+
+        {
+          "name": "Multi-path",
+          "img": "https://source.unsplash.com/random",
+          "desc": "Questa feture permette semplicemente di scegliere percorsi destinazioni multiple.",
+          "descFeature": []
+        },
+        {
+          "name": "Multilanguage",
+          "img": "https://source.unsplash.com/random",
+          "desc": "Questa funzionalità permette all'utente di scegliere la propria lingua. Non è del tutto implementato ma a livello di esercizi da inserire nella scheda e la personalizzazione della propria dieta possono essere fatte in diverse lingue.",
+          "descFeature": []
+        }
       ],
-      "future_develop": "In conclusione l’app non è stata pensata solamente per essere una copia del servizio originale di Spotify, quanto più come una nuova piattaforma che potesse migliorare le caratteristiche di quella attuale. Le funzionalità future che saranno implementate riguardano:• Includere una pagina relativa ai concerti di un particolare artista o semplicemente quelli in una città particolare • Implementare la radio in quanto ci sono dei canali con molti ascolti che sicuramente farebbe aumentare il tempo di utilizzo dell’applicazione • Sfruttare meglio l’API resa disponibile da Spotify in modo da utilizzare il token generato per più chiamate e quindi utilizzare meno la soluzione attuale con rapid-ap"
+      "technology": [
+        {
+          "name": "Authentication",
+          "desc": "Per la parte relativa all'autenticazione è stato utilizzato Firebase per la gestione delle credenziali di accesso e dello stacco dello user Id. Successivamente lato server viene generato il Jwt token passato al client."
+        },
+        {
+          "name": "Database",
+          "desc": "PostgreSql è il principale db utilizzato per il savlataggio dei dati. Le scelte su questo database sono state per la sua scalabilità e gestione di grandi quantità di dati."
+        },
+        {
+          "name": "Client",
+          "desc": "L'interfaccia utente è stataprogettata e realizzata in ReactJs."
+        },
+        {
+          "name": "Backend",
+          "desc": "Il sistema è stato sviluppato attraverso Java Springboot."
+        },
+        {
+          "name": "Design",
+          "desc": "The entire application was made following the Material Design tips using Material UI js library in addition to vanilla css style. The map is Leaflet."
+        }
+      ],
+      "demo": "link to demo video",
+      "future_develop": "L'app è stata pensata per essere un servizio gratuito per la gestione dell'allenamento."
     }
   ],
   "progress": [
     {
       "name": "Yoxeen",
       "value": 1,
-      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
-      "link": "",
+      "desc": "Sistema di supporto all'allenamento in palestra, con funzionalità di creazione di schede d'allenamento e dieta.",
+      "link": "yoxeen",
       "github": "",
       "img": "",
       "role": "Product designer, backend",
       "team": ["name", "test"],
       "timeline": "01-04-2021 / 08-07-2022",
-      "overview": "Il progetto tratta il problema della mancanza di un'applicazione dedicata ai personal trainer in ambito professionale.",
-      "details": "L’applicazione è stata realizzata principalmente per permettere a chiunque di accedere al servizio in modo gratuito. Dunque non c’è una schermata iniziale di login ma si accede direttamente alla dashboard dell’applicativo. Il menu laterale permette di navigare nelle varie pagine mentre l’interno dell’app è composto principalmente da raccolte di canzoni suddivise per varie sezioni e categorie",
+      "overview": "Il progetto è nato per permettere a chiunque di avere la possibilità di creare la propria scheda di allenamento in quanto durante la prima fase di progettazione avevo notato che non c'erano ancora applicazioni che permettessero di svolgere questa funzionalità in modo gratuito.",
+      "details": "Il sistema permette di effettuare l'accesso e salvare i propri progressi recuperando statistica sull'allenamento, salvando la propria routine e tenere sotto controllo i dati giornalieri derivanti dai sensori.",
       "feature": [
-        { "name": "Login", "img": "https://source.unsplash.com/random" },
+        {
+          "name": "Login",
+          "img": "https://source.unsplash.com/random",
+          "desc": "La parte di login è stata implementata attraverso l'utilizzo di Firebase e JWT token e permette ad un utente generico di accedere e avere un account su cui salvarsi tutti i progressi."
+        },
         {
           "name": "Workout builder",
-          "img": "https://source.unsplash.com/random"
+          "img": "https://source.unsplash.com/random",
+          "desc": "In questa sezione è possibile accedere all'interno dell'app come profilo utente o allenatore. Sarà necessario compilare il form di registrazione per poter eseguire correttamente l'accesso."
         },
-        { "name": "Diet Build", "img": "https://source.unsplash.com/random" },
+
+        {
+          "name": "Diet Build",
+          "img": "https://source.unsplash.com/random",
+          "desc": "In questa sezione un utente generico è in grado di procedere alla creazione di una scheda di allenamento.",
+          "descFeature": [
+            "Creazione scheda",
+            "Modifica",
+            "Salvataggio",
+            "Esportazione in pdf",
+            "Condivisione con un altro utente"
+          ]
+        },
         {
           "name": "Multilanguage",
-          "img": "https://source.unsplash.com/random"
+          "img": "https://source.unsplash.com/random",
+          "desc": "Questa funzionalità permette all'utente di scegliere la propria lingua. Non è del tutto implementato ma a livello di esercizi da inserire nella scheda e la personalizzazione della propria dieta possono essere fatte in diverse lingue.",
+          "descFeature": []
         },
-        { "name": "Find PT", "img": "https://source.unsplash.com/random" },
-        { "name": "Free", "img": "https://source.unsplash.com/random" }
+        {
+          "name": "Statistiche",
+          "img": "https://source.unsplash.com/random",
+          "desc": "All'interno dell'app sarà possibile tenere traccia di tutti i dati e successivamente guardare le statistiche generate.",
+          "descFeature": [
+            "Macro Chart",
+            "Weight chart",
+            "Workout chart",
+            "Google Fit Daily data"
+          ]
+        },
+        {
+          "name": "Find PT",
+          "img": "https://source.unsplash.com/random",
+          "desc": "Nel caso avessi la necessità di trovare un personal trainer nella tuo zona sarà possibile effettuarlo andando nella sezione apposita e cercando semplicemente la città. Nel caso in cui non dovessero esserci pt saranno visualizzati i più vicini entro un raggio di 50km.",
+          "descFeature": []
+        },
+        {
+          "name": "Free",
+          "img": "https://source.unsplash.com/random",
+          "desc": "L'app è stata progettata per essere gratuita a tutti coloro che hanno la necessità di iniziare l'approccio all'interno del mondo del fitness. Per qualsiasi idea di miglioramente o qualche feature da inserire vi prego di segnalarlo al seguente link.",
+          "link": "Link di segnalazione",
+          "descFeature": []
+        }
       ],
       "technology": [
         {
           "name": "Authentication",
           "desc": "Per la parte relativa all'autenticazione è stato utilizzato Firebase per la gestione delle credenziali di accesso e dello stacco dello user Id. Successivamente lato server viene generato il Jwt token passato al client."
         },
-        { "name": "", "desc": "" },
-        { "name": "", "desc": "" },
-        { "name": "", "desc": "" },
-        { "name": "", "desc": "" }
+        {
+          "name": "Database",
+          "desc": "MongoDB è il principale db utilizzato per il savlataggio dei dati. Le scelte su questo database sono state per la sua scalabilità e gestione di grandi quantità di dati."
+        },
+        {
+          "name": "Client",
+          "desc": "L'interfaccia utente è stataprogettata e realizzata in ReactJs."
+        },
+        {
+          "name": "Backend",
+          "desc": "Il sistema è stato sviluppato attraverso NodeJs."
+        },
+        {
+          "name": "Design",
+          "desc": "The entire application was made following the Material Design tips using Material UI js library in addition to vanilla css style."
+        }
       ],
-      "link": "yoxeen",
-      "future_develop": "In conclusione l’app non è stata pensata solamente per essere una copia del servizio originale di Spotify, quanto più come una nuova piattaforma che potesse migliorare le caratteristiche di quella attuale. Le funzionalità future che saranno implementate riguardano:• Includere una pagina relativa ai concerti di un particolare artista o semplicemente quelli in una città particolare • Implementare la radio in quanto ci sono dei canali con molti ascolti che sicuramente farebbe aumentare il tempo di utilizzo dell’applicazione • Sfruttare meglio l’API resa disponibile da Spotify in modo da utilizzare il token generato per più chiamate e quindi utilizzare meno la soluzione attuale con rapid-ap"
+      "demo": "link to demo video",
+      "future_develop": "L'app è stata pensata per essere un servizio gratuito per la gestione dell'allenamento."
+    },
+    {
+      "name": "University Master Thesis",
+      "value": 2,
+      "desc": "Progetto di ricerca universitario che consiste nello sviluppare un algoritmo di routing adattato ai veicoli di micromobilità in modo da trovare il percorso più breve, sicuro e basati sulle preference di input dell'utente.",
+      "link": "thesis",
+      "github": "",
+      "img": "",
+      "role": "Full stack developer",
+      "team": ["me"],
+      "timeline": "01-04-2023 / 28-09-2023",
+      "overview": "Il progetto nasce con l'idea di permettere ad un utente di un mezzo di micromobilità di utilizzarlo nel modo più sicuro possibile. Difatti sono vari i problemi che circondano questa nuova tipologia di trasporto e la sicurezza per l'utente è un tema molto importate. Per questo motivo è stato sviluppato un algoritmo di routing basato principalmente sul peso dell'arco che tenesse conto di tutte le variabili che possono esserci durante il percorso.",
+      "details": "Inizialmente il sistema era stato progettato per essere eseguito localmente, ma con successive riflessioni basate anche sugli sviluppi futuri la scelta di utilizzare un database e non la memoria del computer per la costrizione del grafo ha determinato gli sviluppi. Dunuqe il database scelta è stato PostgreSql con l'estensione di PostGis e per effettuare le interrogazioni si è sviluppato un'applicazione SpringBoot in Java. Il progetto si è poi evoluto con un interfaccia grafica sviluppata in ReactJs per la visualizzazione reale del percorso.",
+      "feature": [
+        {
+          "name": "Routing",
+          "img": "https://source.unsplash.com/random",
+          "desc": "La main feature del sistema si basa sulla ricerca del percorso ottimale più breve. Fino a questo punto l'algoritmo utilizzato si basa solo ed esclusivamente sulle strade urbane dell cità, comprendendo tutti i percorsi esistenti percorribili. Dunque non si tiene conto dei mezzi di trasporto come mezzo intermedio di spostamento.",
+          "descFeature": []
+        },
+        {
+          "name": "Form",
+          "img": "https://source.unsplash.com/random",
+          "desc": "In questa parte della pagina ritroviamo il componente relativo al form che permette all'utente di scegliere velocemente il mezzo di trasporto e i punti del percorso.",
+          "descFeature": []
+        },
+
+        {
+          "name": "Multi-path",
+          "img": "https://source.unsplash.com/random",
+          "desc": "Questa feture permette semplicemente di scegliere percorsi destinazioni multiple.",
+          "descFeature": []
+        },
+        {
+          "name": "Multilanguage",
+          "img": "https://source.unsplash.com/random",
+          "desc": "Questa funzionalità permette all'utente di scegliere la propria lingua. Non è del tutto implementato ma a livello di esercizi da inserire nella scheda e la personalizzazione della propria dieta possono essere fatte in diverse lingue.",
+          "descFeature": []
+        }
+      ],
+      "technology": [
+        {
+          "name": "Authentication",
+          "desc": "Per la parte relativa all'autenticazione è stato utilizzato Firebase per la gestione delle credenziali di accesso e dello stacco dello user Id. Successivamente lato server viene generato il Jwt token passato al client."
+        },
+        {
+          "name": "Database",
+          "desc": "PostgreSql è il principale db utilizzato per il savlataggio dei dati. Le scelte su questo database sono state per la sua scalabilità e gestione di grandi quantità di dati."
+        },
+        {
+          "name": "Client",
+          "desc": "L'interfaccia utente è stataprogettata e realizzata in ReactJs."
+        },
+        {
+          "name": "Backend",
+          "desc": "Il sistema è stato sviluppato attraverso Java Springboot."
+        },
+        {
+          "name": "Design",
+          "desc": "The entire application was made following the Material Design tips using Material UI js library in addition to vanilla css style. The map is Leaflet."
+        }
+      ],
+      "demo": "link to demo video",
+      "future_develop": "L'app è stata pensata per essere un servizio gratuito per la gestione dell'allenamento."
     }
   ]
 }

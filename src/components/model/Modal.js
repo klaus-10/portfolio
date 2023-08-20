@@ -4,8 +4,10 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 
+import "./Modal.css";
+
 const style = {
-  position: "absolute",
+  position: "fixed",
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
@@ -17,29 +19,24 @@ const style = {
 };
 
 export default function BasicModal({ img, title, desc, state, openFunction }) {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => {
-    setOpen(true);
-    openFunction();
-  };
+  // Remove the local 'open' state from here
   const handleClose = () => {
-    setOpen(false);
-    openFunction();
+    openFunction(); // Call the function passed from the parent to close the modal
   };
 
   return (
     <div>
-      <Button onClick={handleOpen}>Open modal</Button>
       <Modal
-        open={open}
+        open={state} // Use the 'state' prop to control the modal open/close state
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
+        className="modal-box"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-img" className="modal_img_box">
+          <div id="modal-modal-img" className="modal_img_box">
             <img src="https://source.unsplash.com/random" alt="" />
-          </Typography>
+          </div>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             {title}
           </Typography>

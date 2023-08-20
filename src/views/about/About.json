@@ -16,37 +16,37 @@
     {
       "name": "Web Development",
       "value": 1,
-      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "desc": "Craft engaging and interactive web experiences, turning high-fidelity designs into functional prototypes.",
       "img": "public"
     },
     {
       "name": "Back-end Development",
       "value": 1,
-      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "desc": "Build the core of applications, handling server-side logic and databases to ensure seamless functionality.",
       "img": "code"
     },
     {
       "name": "Git Version Control",
       "value": 7,
-      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "desc": "Efficiently manage codebase changes, collaborate seamlessly with teams, and track project progress using Git.",
       "img": "account_tree"
     },
     {
       "name": "App Design",
       "value": 1,
-      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "desc": "Design visually appealing and user-friendly app interfaces that enhance user experiences.",
       "img": "draw"
     },
     {
       "name": "Database",
       "value": 1,
-      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "desc": "Design, implement, and manage databases to ensure efficient data storage and retrieval.",
       "img": "database"
     },
     {
       "name": "Teamwork",
       "value": 1,
-      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "desc": "Collaborate effectively within teams, leveraging diverse skills to achieve project goals cohesively.",
       "img": "groups"
     }
   ],

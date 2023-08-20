@@ -1,12 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import data from "../Work.json";
 
 import "./WorkPage.css";
 import TemplateCard from "../../../components/template-card/TemplateCard";
 import BasicModal from "../../../components/model/Modal";
+import Card from "../../../components/card/Card";
 
 export default function WorkPage() {
+  const childFeatureRef = useRef(null);
+
   let { name } = useParams();
 
   const [workList, setWorkList] = useState([...data?.done, ...data?.progress]);
@@ -15,9 +18,14 @@ export default function WorkPage() {
   const [openModalVal, setOpenModalVal] = useState(false);
   const [featureItem, setFeatureItem] = useState({});
 
+  console.log(featureItem);
+
   useEffect(() => {
     for (let i = 0; i < workList.length; i++) {
-      if (workList[i].name.toLowerCase() === name.toLowerCase()) {
+      if (
+        workList[i].name.toLowerCase() === name.toLowerCase() ||
+        workList[i].name.toLocaleLowerCase().includes(name.toLocaleLowerCase())
+      ) {
         setItem(workList[i]);
       }
     }
@@ -29,15 +37,15 @@ export default function WorkPage() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }, []);
 
-  const handleOpenModalVal = () => {
+  const handleOpenModalVal = (feature) => {
     setOpenModalVal(!openModalVal);
-    if (!openModalVal) setFeatureItem({});
+    if (!openModalVal) setFeatureItem(feature);
   };
 
   return (
     <div className="work-page">
       <div className="work-title margin-btn-80">
-        <h1>{name}.</h1>
+        <h1>{item?.name}.</h1>
       </div>
 
       <div className="grid-wrap flex-center">
@@ -67,7 +75,7 @@ export default function WorkPage() {
         </div>
       </div>
 
-      <div className="image">
+      <div className="image portrait-image">
         <img src={item?.first_img} alt="" />
       </div>
 
@@ -77,20 +85,22 @@ export default function WorkPage() {
             <h1>Overview.</h1>
           </div>
           <p>{item?.overview}</p>
+          <br></br>
+          <p>{item?.details}</p>
         </div>
       </div>
 
-      <div className="image">
+      <div className="image landscape-image">
         <img src="https://source.unsplash.com/random" alt="" />
       </div>
 
-      {/* {item?.overview && (
+      {/* {item?.details && (
         <div className="grid-wrap flex-center">
           <div className="text-max-width space">
             <div className="about-title2">
-              <h1>Overview.</h1>
+              <h1>Details.</h1>
             </div>
-            <p>{item?.overview}</p>
+            <p>{item?.details}</p>
           </div>
         </div>
       )} */}
@@ -106,7 +116,7 @@ export default function WorkPage() {
           </div>
 
           <div className="grid-wrap flex-center">
-            <div className="about-skill ww">
+            <div className="feature ww">
               {item.feature.map((el, pos) => (
                 // <div className="point-item">
                 //   {/* <div>01</div> */}
@@ -119,9 +129,51 @@ export default function WorkPage() {
                 //   </p>
                 // </div>
 
-                <div onClick={() => setFeatureItem()}>
-                  <TemplateCard key={pos + "s"} title={el.name} img={el?.img} />
+                // <div
+                //   key={pos + "s"}
+                //   onClick={() => {
+                //     setFeatureItem(el); // Store the current feature item
+                //     handleOpenModalVal(el); // Open the modal
+                //   }}
+                // >
+                //   <TemplateCard key={pos + "s"} title={el.name} img={el?.img} />
+                // </div>
+
+                <div className="center">
+                  <div className="text-max-width inner_widht margin-bottom-s">
+                    <h3>{el.name}</h3>
+                    <p>{el.desc}</p>
+                  </div>
+
+                  <div class="image landscape-image margin-bottom-m">
+                    <img src="https://source.unsplash.com/random" alt="" />
+                    {/* <p>{el.desc}</p> */}
+                  </div>
                 </div>
+              ))}
+            </div>
+          </div>
+        </>
+      )}
+
+      {item?.technology && (
+        <>
+          <div className="about-title2">
+            <h1>Technology.</h1>
+            {/* <p>I love Design, Technology, and Story.</p> */}
+          </div>
+          <div className="grid-wrap flex-center">
+            <div className="about-skill ww">
+              {item?.technology?.map((el, pos) => (
+                // <div className="skill-item">
+                <Card
+                  key={pos + "v"}
+                  title={el.name}
+                  desc={el.desc}
+                  pos={pos}
+                  img={el.img}
+                />
+                // </div>
               ))}
             </div>
           </div>
