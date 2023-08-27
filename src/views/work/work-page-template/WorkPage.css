@@ -185,3 +185,13 @@
   position: relative !important;
   overflow-y: auto !important;
 }
+
+.technical_feature {
+  text-align: left;
+}
+
+.technical_feature_item {
+  border-bottom: solid 1px white;
+  margin-bottom: 25px;
+  padding-bottom: 8px;
+}

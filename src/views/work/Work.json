@@ -12,12 +12,7 @@
       "timeline": "01-04-2023 / 15-04-2023",
       "overview": "Il progetto nasce da un corso Universitario per il quale era necessario realizzare un'applicazione a piacere. Avendo sempre voluto realizzare un'app in ambito musicale ho deciso di effettuare un clone di Spotify.",
       "details": "L’applicazione è stata realizzata principalmente per permettere a chiunque di accedere al servizio in modo gratuito. Dunque non c’è una schermata iniziale di login ma si accede direttamente alla dashboard dell’applicativo. Il menu laterale permette di navigare nelle varie pagine mentre l’interno dell’app è composto principalmente da raccolte di canzoni suddivise per varie sezioni e categorie",
-      "feature": [
-        {
-          "name": "Login",
-          "img": "https://source.unsplash.com/random",
-          "desc": "Il login è possibile effettuarlo solo ed esclusivamente se si è in possesso di un account premium spotify. In questo modo sarà possibile utilizzare le api rese disponibili dal servizio."
-        },
+      "mainFeature": [
         {
           "name": "Search song",
           "img": "https://source.unsplash.com/random",
@@ -50,6 +45,20 @@
           "descFeature": []
         }
       ],
+      "feature": [
+        {
+          "name": "Login",
+          "img": "https://source.unsplash.com/random",
+          "desc": "Il login è possibile effettuarlo solo ed esclusivamente se si è in possesso di un account premium spotify. In questo modo sarà possibile utilizzare le api rese disponibili dal servizio."
+        },
+
+        {
+          "name": "Design",
+          "img": "https://source.unsplash.com/random",
+          "desc": "Il design simile, ma allo stesso tempo innovativo in quanto cerca di aggiungere ciò che manca al servizio.",
+          "descFeature": []
+        }
+      ],
       "technology": [
         {
           "name": "Authentication calls",
@@ -70,6 +79,7 @@
       "value": 1,
       "desc": "Sistema di supporto all'allenamento in palestra, con funzionalità di creazione di schede d'allenamento e dieta.",
       "link": "yoxeen",
+      "url": "https:yoxeen.it",
       "github": "",
       "img": "",
       "role": "Product designer, backend",
@@ -77,7 +87,7 @@
       "timeline": "01-04-2021 / 08-07-2022",
       "overview": "Il progetto è nato per permettere a chiunque di avere la possibilità di creare la propria scheda di allenamento in quanto durante la prima fase di progettazione avevo notato che non c'erano ancora applicazioni che permettessero di svolgere questa funzionalità in modo gratuito.",
       "details": "Il sistema permette di effettuare l'accesso e salvare i propri progressi recuperando statistica sull'allenamento, salvando la propria routine e tenere sotto controllo i dati giornalieri derivanti dai sensori.",
-      "feature": [
+      "mainFeature": [
         {
           "name": "Login",
           "img": "https://source.unsplash.com/random",
@@ -122,6 +132,26 @@
           "name": "Find PT",
           "img": "https://source.unsplash.com/random",
           "desc": "Nel caso avessi la necessità di trovare un personal trainer nella tuo zona sarà possibile effettuarlo andando nella sezione apposita e cercando semplicemente la città. Nel caso in cui non dovessero esserci pt saranno visualizzati i più vicini entro un raggio di 50km.",
+          "descFeature": []
+        },
+        {
+          "name": "Free",
+          "img": "https://source.unsplash.com/random",
+          "desc": "L'app è stata progettata per essere gratuita a tutti coloro che hanno la necessità di iniziare l'approccio all'interno del mondo del fitness. Per qualsiasi idea di miglioramente o qualche feature da inserire vi prego di segnalarlo al seguente link.",
+          "link": "Link di segnalazione",
+          "descFeature": []
+        }
+      ],
+      "feature": [
+        {
+          "name": "Login",
+          "img": "https://source.unsplash.com/random",
+          "desc": "La parte di login è stata implementata attraverso l'utilizzo di Firebase e JWT token e permette ad un utente generico di accedere e avere un account su cui salvarsi tutti i progressi."
+        },
+        {
+          "name": "Multilanguage",
+          "img": "https://source.unsplash.com/random",
+          "desc": "Questa funzionalità permette all'utente di scegliere la propria lingua. Non è del tutto implementato ma a livello di esercizi da inserire nella scheda e la personalizzazione della propria dieta possono essere fatte in diverse lingue.",
           "descFeature": []
         },
         {
@@ -169,12 +199,13 @@
       "timeline": "01-04-2021 / 08-07-2022",
       "overview": "Il progetto nasce con l'idea di creare un servizio per locali notturni prenotazioni. Statistiche, ingressi, omaggi, liste sono solo alcuni dei concetti che vengono riportati nel sistema che vengono utilizzati ogni serata da tutte le discoteche. L'applicazione permette di semplificare il tutto e tenere sotto controllo il proprio locale.",
       "details": "L’applicazione è stata realizzata principalmente per permettere a chiunque di accedere al servizio in modo gratuito. Dunque non c’è una schermata iniziale di login ma si accede direttamente alla dashboard dell’applicativo. Il menu laterale permette di navigare nelle varie pagine mentre l’interno dell’app è composto principalmente da raccolte di canzoni suddivise per varie sezioni e categorie",
-      "feature": [
+      "mainFeature": [
         { "name": "Login", "img": "https://source.unsplash.com/random" },
         { "name": "Track", "img": "https://source.unsplash.com/random" },
         { "name": "Search", "img": "https://source.unsplash.com/random" },
         { "name": "Playlist", "img": "https://source.unsplash.com/random" }
       ],
+      "feature": [],
       "future_develop": "In conclusione l’app non è stata pensata solamente per essere una copia del servizio originale di Spotify, quanto più come una nuova piattaforma che potesse migliorare le caratteristiche di quella attuale. Le funzionalità future che saranno implementate riguardano:• Includere una pagina relativa ai concerti di un particolare artista o semplicemente quelli in una città particolare • Implementare la radio in quanto ci sono dei canali con molti ascolti che sicuramente farebbe aumentare il tempo di utilizzo dell’applicazione • Sfruttare meglio l’API resa disponibile da Spotify in modo da utilizzare il token generato per più chiamate e quindi utilizzare meno la soluzione attuale con rapid-ap"
     },
     {
@@ -189,7 +220,7 @@
       "timeline": "01-04-2023 / 28-09-2023",
       "overview": "Il progetto nasce con l'idea di permettere ad un utente di un mezzo di micromobilità di utilizzarlo nel modo più sicuro possibile. Difatti sono vari i problemi che circondano questa nuova tipologia di trasporto e la sicurezza per l'utente è un tema molto importate. Per questo motivo è stato sviluppato un algoritmo di routing basato principalmente sul peso dell'arco che tenesse conto di tutte le variabili che possono esserci durante il percorso.",
       "details": "Inizialmente il sistema era stato progettato per essere eseguito localmente, ma con successive riflessioni basate anche sugli sviluppi futuri la scelta di utilizzare un database e non la memoria del computer per la costrizione del grafo ha determinato gli sviluppi. Dunuqe il database scelta è stato PostgreSql con l'estensione di PostGis e per effettuare le interrogazioni si è sviluppato un'applicazione SpringBoot in Java. Il progetto si è poi evoluto con un interfaccia grafica sviluppata in ReactJs per la visualizzazione reale del percorso.",
-      "feature": [
+      "mainFeature": [
         {
           "name": "Routing",
           "img": "https://source.unsplash.com/random",
@@ -216,6 +247,7 @@
           "descFeature": []
         }
       ],
+      "feature": [],
       "technology": [
         {
           "name": "Authentication",
@@ -248,6 +280,7 @@
       "value": 1,
       "desc": "Sistema di supporto all'allenamento in palestra, con funzionalità di creazione di schede d'allenamento e dieta.",
       "link": "yoxeen",
+      "url": "https:yoxeen.it",
       "github": "",
       "img": "",
       "role": "Product designer, backend",
@@ -255,12 +288,7 @@
       "timeline": "01-04-2021 / 08-07-2022",
       "overview": "Il progetto è nato per permettere a chiunque di avere la possibilità di creare la propria scheda di allenamento in quanto durante la prima fase di progettazione avevo notato che non c'erano ancora applicazioni che permettessero di svolgere questa funzionalità in modo gratuito.",
       "details": "Il sistema permette di effettuare l'accesso e salvare i propri progressi recuperando statistica sull'allenamento, salvando la propria routine e tenere sotto controllo i dati giornalieri derivanti dai sensori.",
-      "feature": [
-        {
-          "name": "Login",
-          "img": "https://source.unsplash.com/random",
-          "desc": "La parte di login è stata implementata attraverso l'utilizzo di Firebase e JWT token e permette ad un utente generico di accedere e avere un account su cui salvarsi tutti i progressi."
-        },
+      "mainFeature": [
         {
           "name": "Workout builder",
           "img": "https://source.unsplash.com/random",
@@ -279,12 +307,7 @@
             "Condivisione con un altro utente"
           ]
         },
-        {
-          "name": "Multilanguage",
-          "img": "https://source.unsplash.com/random",
-          "desc": "Questa funzionalità permette all'utente di scegliere la propria lingua. Non è del tutto implementato ma a livello di esercizi da inserire nella scheda e la personalizzazione della propria dieta possono essere fatte in diverse lingue.",
-          "descFeature": []
-        },
+
         {
           "name": "Statistiche",
           "img": "https://source.unsplash.com/random",
@@ -300,6 +323,19 @@
           "name": "Find PT",
           "img": "https://source.unsplash.com/random",
           "desc": "Nel caso avessi la necessità di trovare un personal trainer nella tuo zona sarà possibile effettuarlo andando nella sezione apposita e cercando semplicemente la città. Nel caso in cui non dovessero esserci pt saranno visualizzati i più vicini entro un raggio di 50km.",
+          "descFeature": []
+        }
+      ],
+      "feature": [
+        {
+          "name": "Login",
+          "img": "https://source.unsplash.com/random",
+          "desc": "La parte di login è stata implementata attraverso l'utilizzo di Firebase e JWT token e permette ad un utente generico di accedere e avere un account su cui salvarsi tutti i progressi."
+        },
+        {
+          "name": "Multilanguage",
+          "img": "https://source.unsplash.com/random",
+          "desc": "Questa funzionalità permette all'utente di scegliere la propria lingua. Non è del tutto implementato ma a livello di esercizi da inserire nella scheda e la personalizzazione della propria dieta possono essere fatte in diverse lingue.",
           "descFeature": []
         },
         {
@@ -347,7 +383,7 @@
       "timeline": "01-04-2023 / 28-09-2023",
       "overview": "Il progetto nasce con l'idea di permettere ad un utente di un mezzo di micromobilità di utilizzarlo nel modo più sicuro possibile. Difatti sono vari i problemi che circondano questa nuova tipologia di trasporto e la sicurezza per l'utente è un tema molto importate. Per questo motivo è stato sviluppato un algoritmo di routing basato principalmente sul peso dell'arco che tenesse conto di tutte le variabili che possono esserci durante il percorso.",
       "details": "Inizialmente il sistema era stato progettato per essere eseguito localmente, ma con successive riflessioni basate anche sugli sviluppi futuri la scelta di utilizzare un database e non la memoria del computer per la costrizione del grafo ha determinato gli sviluppi. Dunuqe il database scelta è stato PostgreSql con l'estensione di PostGis e per effettuare le interrogazioni si è sviluppato un'applicazione SpringBoot in Java. Il progetto si è poi evoluto con un interfaccia grafica sviluppata in ReactJs per la visualizzazione reale del percorso.",
-      "feature": [
+      "mainFeature": [
         {
           "name": "Routing",
           "img": "https://source.unsplash.com/random",
@@ -374,6 +410,7 @@
           "descFeature": []
         }
       ],
+      "feature": [],
       "technology": [
         {
           "name": "Authentication",

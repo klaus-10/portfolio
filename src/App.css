@@ -126,3 +126,7 @@ a {
 .margin-bottom-m {
   margin-bottom: var(--margin-bottom, var(--spacing-m)) !important;
 }
+
+.page-height {
+  min-height: 100vh;
+}

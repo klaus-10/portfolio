@@ -90,9 +90,9 @@ export default function WorkPage() {
         </div>
       </div>
 
-      <div className="image landscape-image">
+      {/* <div className="image landscape-image">
         <img src="https://source.unsplash.com/random" alt="" />
-      </div>
+      </div> */}
 
       {/* {item?.details && (
         <div className="grid-wrap flex-center">
@@ -105,7 +105,14 @@ export default function WorkPage() {
         </div>
       )} */}
 
-      {item?.feature && (
+      <div className="image landscape-image">
+        <iframe
+          style={{ width: "100%", minHeight: "75vh" }}
+          src={item?.url}
+        ></iframe>
+      </div>
+
+      {item?.mainFeature && (
         <>
           <div className="grid-wrap flex-center">
             <div className="text-max-width space">
@@ -117,6 +124,36 @@ export default function WorkPage() {
 
           <div className="grid-wrap flex-center">
             <div className="feature ww">
+              {item.mainFeature.map((el, pos) => (
+                <div className="center">
+                  <div className="text-max-width inner_widht margin-bottom-s">
+                    <h3>{el.name}</h3>
+                    <p>{el.desc}</p>
+                  </div>
+
+                  <div class="image landscape-image margin-bottom-m">
+                    <img src="https://source.unsplash.com/random" alt="" />
+                    {/* <p>{el.desc}</p> */}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </>
+      )}
+
+      {item?.feature && item?.feature?.length != 0 && (
+        <div className="flex-center page-height">
+          <div className="grid-wrap flex-center">
+            <div className="text-max-width space">
+              <div className="about-title2">
+                <h1>Technical Features.</h1>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid-wrap flex-center text-max-width">
+            <div className="technical_feature ww">
               {item.feature.map((el, pos) => (
                 // <div className="point-item">
                 //   {/* <div>01</div> */}
@@ -139,21 +176,26 @@ export default function WorkPage() {
                 //   <TemplateCard key={pos + "s"} title={el.name} img={el?.img} />
                 // </div>
 
-                <div className="center">
-                  <div className="text-max-width inner_widht margin-bottom-s">
-                    <h3>{el.name}</h3>
-                    <p>{el.desc}</p>
-                  </div>
+                // <div className="center">
+                //   <div className="text-max-width inner_widht margin-bottom-s">
+                //     <h3>{el.name}</h3>
+                //     <p>{el.desc}</p>
+                //   </div>
 
-                  <div class="image landscape-image margin-bottom-m">
-                    <img src="https://source.unsplash.com/random" alt="" />
-                    {/* <p>{el.desc}</p> */}
-                  </div>
+                //   <div class="image landscape-image margin-bottom-m">
+                //     <img src="https://source.unsplash.com/random" alt="" />
+                //     {/* <p>{el.desc}</p> */}
+                //   </div>
+                // </div>
+
+                <div className="technical_feature_item" key={pos + "d"}>
+                  <h3>{el.name}</h3>
+                  <p>{el.desc}</p>
                 </div>
               ))}
             </div>
           </div>
-        </>
+        </div>
       )}
 
       {item?.technology && (
