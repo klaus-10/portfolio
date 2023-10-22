@@ -32,6 +32,7 @@ export default function Work() {
               title={el.name}
               desc={el.desc}
               pos={pos}
+              click={() => handleOpenWork(el.link)}
             />
             // </div>
           ))}
@@ -50,7 +51,7 @@ export default function Work() {
               title={el.name}
               desc={el.desc}
               pos={pos}
-              click={() => handleOpenWork(el.link)}
+              // click={() => handleOpenWork(el.link)}
             />
             // </div>
           ))}

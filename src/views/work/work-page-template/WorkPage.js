@@ -6,6 +6,9 @@ import "./WorkPage.css";
 import TemplateCard from "../../../components/template-card/TemplateCard";
 import BasicModal from "../../../components/model/Modal";
 import Card from "../../../components/card/Card";
+import GridBoxWorkPage from "../../../components/gridbox/GridBoxWorkPage";
+
+// import video from "../../../assets/video/spotify_app_overview.mp4";
 
 export default function WorkPage() {
   const childFeatureRef = useRef(null);
@@ -18,7 +21,7 @@ export default function WorkPage() {
   const [openModalVal, setOpenModalVal] = useState(false);
   const [featureItem, setFeatureItem] = useState({});
 
-  console.log(featureItem);
+  console.log(item);
 
   useEffect(() => {
     for (let i = 0; i < workList.length; i++) {
@@ -30,6 +33,12 @@ export default function WorkPage() {
       }
     }
   }, []);
+
+  // import dinamico del video se esiste
+  console.log(process.env.PUBLIC_URL + item?.video);
+
+  console.log("public", window.location.origin);
+  console.log("video", item?.video);
 
   // go on top function
   useEffect(() => {
@@ -107,10 +116,31 @@ export default function WorkPage() {
 
       <div className="image landscape-image">
         <iframe
-          style={{ width: "100%", minHeight: "75vh" }}
-          src={item?.url}
-        ></iframe>
+          style={{ width: "100%", minHeight: "75vh", position: "relative" }}
+          src={
+            item?.video
+              ? `${process.env.PUBLIC_URL}/video/${item.video}.mp4`
+              : item?.url
+          }
+        />
       </div>
+
+      {/* {item?.video && (
+        <video width="320" height="240" controls>
+          <source src={process.env.PUBLIC_URL + item?.video} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      )}
+
+      {item?.url && (
+        <video width="320" height="240" controls>
+          <source
+            src={`${process.env.PUBLIC_URL}/video/${item.url}.mp4`}
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      )} */}
 
       {item?.mainFeature && (
         <>
@@ -129,12 +159,36 @@ export default function WorkPage() {
                   <div className="text-max-width inner_widht margin-bottom-s">
                     <h3>{el.name}</h3>
                     <p>{el.desc}</p>
+                    <ul>
+                      {el?.descList?.map((el_in, ind) => {
+                        <li>
+                          <p>{el_in}</p>
+                        </li>;
+                      })}
+                    </ul>
                   </div>
 
-                  <div class="image landscape-image margin-bottom-m">
-                    <img src="https://source.unsplash.com/random" alt="" />
-                    {/* <p>{el.desc}</p> */}
-                  </div>
+                  {el.descFeature.length !== 0 ? (
+                    <GridBoxWorkPage data={el.descFeature} />
+                  ) : (
+                    <div className="image landscape-image margin-bottom-m">
+                      {el.video ? (
+                        <video
+                          style={{ width: "100%", minHeight: "75vh" }}
+                          src={`${process.env.PUBLIC_URL}/video/${el.video}.mp4`}
+                          loop
+                          autoPlay
+                          controls
+                        />
+                      ) : (
+                        <img
+                          src={`${process.env.PUBLIC_URL}/images/${el.img}.png`}
+                          alt=""
+                        />
+                      )}
+                      {/* <p>{el.desc}</p> */}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
@@ -142,7 +196,7 @@ export default function WorkPage() {
         </>
       )}
 
-      {item?.feature && item?.feature?.length != 0 && (
+      {item?.feature && item?.feature?.length !== 0 && (
         <div className="flex-center page-height">
           <div className="grid-wrap flex-center">
             <div className="text-max-width space">

@@ -97,7 +97,8 @@
   z-index: var(--zindex-base);
 }
 
-.work-page .image {
+.work-page .image,
+.work-page .image2 {
   position: relative;
   width: 100%;
   height: 100%;

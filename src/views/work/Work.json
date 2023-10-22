@@ -4,7 +4,9 @@
       "name": "Spotify",
       "value": 1,
       "desc": "Simple Spotify app clone with some extra features",
-      "link": "",
+      "link": "spotify",
+      "url": "",
+      "video": "spotify_app_overview",
       "github": "",
       "img": "",
       "role": "Product designer, backend",
@@ -15,46 +17,41 @@
       "mainFeature": [
         {
           "name": "Search song",
-          "img": "https://source.unsplash.com/random",
+          "img": "spotify/spotify_search",
           "desc": "Il sistema permette un servizio di ricerca delel canzoni, artisti, album con ricerche correlate.",
           "descFeature": []
         },
 
         {
           "name": "Home",
-          "img": "https://source.unsplash.com/random",
+          "img": "spotify/spotify_home",
           "desc": "In questa sezione l'utente si ritroverà nella HomePage dell'app all'interno delal quale potrà effettuare una vera propria 'Discovery' delle traccie in primo piano.",
           "descFeature": []
         },
         {
           "name": "Library",
-          "img": "https://source.unsplash.com/random",
+          "img": "spotify/spotify_playlist",
           "desc": "Una volta effettuato l'accesso sarà poi possibile visualizzare la propria libreria spotify. Manca ancora da integrare il cambio api da quelle di Rapid Api a quelle di Spotify per l'ascolto della musica.",
           "descFeature": []
         },
         {
-          "name": "Raido",
-          "img": "https://source.unsplash.com/random",
-          "desc": "Questa feature è ancoa in fase beta, ma sarebbe fantastico poter ascoltare le stazioni radio principali del proprio paese!",
-          "descFeature": []
-        },
-        {
-          "name": "Concert",
-          "img": "https://source.unsplash.com/random",
-          "desc": "Anche questa sezione è in fase beta, ma l'idea ocnsiste di fornire un servizio con tutti gli eventi inerenti alal propria zona. Inoltre sarà possibile cercare l'evento per nome, artista, città e paese, ottenere informazioni e molto altro.",
+          "name": "Track",
+          "img": "spotify/spotify_track",
+          "desc": "Questa pagina permette di ascoltare una canzone di un determinato artista, utilizzando un api limitata è possibile ascoltare solo parte della traccia.",
           "descFeature": []
         }
       ],
+      "gridFeature": [],
       "feature": [
         {
           "name": "Login",
-          "img": "https://source.unsplash.com/random",
+          "img": "",
           "desc": "Il login è possibile effettuarlo solo ed esclusivamente se si è in possesso di un account premium spotify. In questo modo sarà possibile utilizzare le api rese disponibili dal servizio."
         },
 
         {
           "name": "Design",
-          "img": "https://source.unsplash.com/random",
+          "img": "",
           "desc": "Il design simile, ma allo stesso tempo innovativo in quanto cerca di aggiungere ciò che manca al servizio.",
           "descFeature": []
         }
@@ -89,27 +86,31 @@
       "details": "Il sistema permette di effettuare l'accesso e salvare i propri progressi recuperando statistica sull'allenamento, salvando la propria routine e tenere sotto controllo i dati giornalieri derivanti dai sensori.",
       "mainFeature": [
         {
-          "name": "Login",
-          "img": "https://source.unsplash.com/random",
-          "desc": "La parte di login è stata implementata attraverso l'utilizzo di Firebase e JWT token e permette ad un utente generico di accedere e avere un account su cui salvarsi tutti i progressi."
-        },
-        {
           "name": "Workout builder",
-          "img": "https://source.unsplash.com/random",
-          "desc": "In questa sezione è possibile accedere all'interno dell'app come profilo utente o allenatore. Sarà necessario compilare il form di registrazione per poter eseguire correttamente l'accesso."
-        },
-
-        {
-          "name": "Diet Build",
-          "img": "https://source.unsplash.com/random",
-          "desc": "In questa sezione un utente generico è in grado di procedere alla creazione di una scheda di allenamento.",
-          "descFeature": [
-            "Creazione scheda",
+          "img": "",
+          "video": "yoxeen_workout",
+          "desc": "In questa sezione è possibile accedere all'interno dell'app come profilo utente o allenatore. Sarà necessario compilare il form di registrazione per poter eseguire correttamente l'accesso.",
+          "descList": [
+            "Creazione scheda di allenamento",
             "Modifica",
             "Salvataggio",
             "Esportazione in pdf",
             "Condivisione con un altro utente"
-          ]
+          ],
+          "descFeature": []
+        },
+
+        {
+          "name": "Diet Build",
+          "img": "",
+          "video": "yoxeen_diet",
+          "desc": "In questa sezione dell'applicazione si può creare una scheda alimentare personalizzata. La ricerca degli alimenti può avvenire in 5 lingue e il risultato sarà salvato nella lingua originale impostata nel profilo. Il numero di alimenti presenti all'interno del database è basilare ed è mirato ad un'alimentazione sana della persona. In caso di mancanze o necessità vi prego di segnalare all'interno della sezione contatti.",
+          "descList": [
+            "Creazione scheda alimentare",
+            "Modifica",
+            "Esportazione in pdf"
+          ],
+          "descFeature": []
         },
         {
           "name": "Multilanguage",
@@ -121,24 +122,53 @@
           "name": "Statistiche",
           "img": "https://source.unsplash.com/random",
           "desc": "All'interno dell'app sarà possibile tenere traccia di tutti i dati e successivamente guardare le statistiche generate.",
+          "descList": [],
           "descFeature": [
-            "Macro Chart",
-            "Weight chart",
-            "Workout chart",
-            "Google Fit Daily data"
+            {
+              "name": "Macro Chart",
+              "img": "yoxeen/yoxeen_progress_macro"
+            },
+            {
+              "name": "Weight chart",
+              "img": "yoxeen/yoxeen_progress_weight"
+            },
+            {
+              "name": "Workout chart",
+              "img": "yoxeen/yoxeen_progress_workout_stats"
+            },
+            {
+              "name": "Google Fit Daily data",
+              "img": "yoxeen/yoxeen_progress_google_fit"
+            }
+          ]
+        },
+        {
+          "name": "Explore",
+          "img": "",
+          "desc": "Nel caso avessi la necessità di trovare un personal trainer nella tuo zona sarà possibile effettuarlo andando nella sezione apposita e cercando semplicemente la città. Nel caso in cui non dovessero esserci pt saranno visualizzati i più vicini entro un raggio di 50km.",
+          "descFeature": [
+            {
+              "name": "Home",
+              "img": "yoxeen/yoxeen_explore_home"
+            },
+            {
+              "name": "Category",
+              "img": "yoxeen/yoxeen_explore_category"
+            },
+            {
+              "name": "Exercises list",
+              "img": "yoxeen/yoxeen_explore_exercises_list"
+            },
+            {
+              "name": "Exercise",
+              "img": "yoxeen/yoxeen_explore_exercise"
+            }
           ]
         },
         {
           "name": "Find PT",
-          "img": "https://source.unsplash.com/random",
+          "img": "yoxeen/yoxeen_find_expert",
           "desc": "Nel caso avessi la necessità di trovare un personal trainer nella tuo zona sarà possibile effettuarlo andando nella sezione apposita e cercando semplicemente la città. Nel caso in cui non dovessero esserci pt saranno visualizzati i più vicini entro un raggio di 50km.",
-          "descFeature": []
-        },
-        {
-          "name": "Free",
-          "img": "https://source.unsplash.com/random",
-          "desc": "L'app è stata progettata per essere gratuita a tutti coloro che hanno la necessità di iniziare l'approccio all'interno del mondo del fitness. Per qualsiasi idea di miglioramente o qualche feature da inserire vi prego di segnalarlo al seguente link.",
-          "link": "Link di segnalazione",
           "descFeature": []
         }
       ],
@@ -150,7 +180,7 @@
         },
         {
           "name": "Multilanguage",
-          "img": "https://source.unsplash.com/random",
+          "img": "yoxeen/yoxeen_multi_language",
           "desc": "Questa funzionalità permette all'utente di scegliere la propria lingua. Non è del tutto implementato ma a livello di esercizi da inserire nella scheda e la personalizzazione della propria dieta possono essere fatte in diverse lingue.",
           "descFeature": []
         },
@@ -275,102 +305,6 @@
     }
   ],
   "progress": [
-    {
-      "name": "Yoxeen",
-      "value": 1,
-      "desc": "Sistema di supporto all'allenamento in palestra, con funzionalità di creazione di schede d'allenamento e dieta.",
-      "link": "yoxeen",
-      "url": "https:yoxeen.it",
-      "github": "",
-      "img": "",
-      "role": "Product designer, backend",
-      "team": ["name", "test"],
-      "timeline": "01-04-2021 / 08-07-2022",
-      "overview": "Il progetto è nato per permettere a chiunque di avere la possibilità di creare la propria scheda di allenamento in quanto durante la prima fase di progettazione avevo notato che non c'erano ancora applicazioni che permettessero di svolgere questa funzionalità in modo gratuito.",
-      "details": "Il sistema permette di effettuare l'accesso e salvare i propri progressi recuperando statistica sull'allenamento, salvando la propria routine e tenere sotto controllo i dati giornalieri derivanti dai sensori.",
-      "mainFeature": [
-        {
-          "name": "Workout builder",
-          "img": "https://source.unsplash.com/random",
-          "desc": "In questa sezione è possibile accedere all'interno dell'app come profilo utente o allenatore. Sarà necessario compilare il form di registrazione per poter eseguire correttamente l'accesso."
-        },
-
-        {
-          "name": "Diet Build",
-          "img": "https://source.unsplash.com/random",
-          "desc": "In questa sezione un utente generico è in grado di procedere alla creazione di una scheda di allenamento.",
-          "descFeature": [
-            "Creazione scheda",
-            "Modifica",
-            "Salvataggio",
-            "Esportazione in pdf",
-            "Condivisione con un altro utente"
-          ]
-        },
-
-        {
-          "name": "Statistiche",
-          "img": "https://source.unsplash.com/random",
-          "desc": "All'interno dell'app sarà possibile tenere traccia di tutti i dati e successivamente guardare le statistiche generate.",
-          "descFeature": [
-            "Macro Chart",
-            "Weight chart",
-            "Workout chart",
-            "Google Fit Daily data"
-          ]
-        },
-        {
-          "name": "Find PT",
-          "img": "https://source.unsplash.com/random",
-          "desc": "Nel caso avessi la necessità di trovare un personal trainer nella tuo zona sarà possibile effettuarlo andando nella sezione apposita e cercando semplicemente la città. Nel caso in cui non dovessero esserci pt saranno visualizzati i più vicini entro un raggio di 50km.",
-          "descFeature": []
-        }
-      ],
-      "feature": [
-        {
-          "name": "Login",
-          "img": "https://source.unsplash.com/random",
-          "desc": "La parte di login è stata implementata attraverso l'utilizzo di Firebase e JWT token e permette ad un utente generico di accedere e avere un account su cui salvarsi tutti i progressi."
-        },
-        {
-          "name": "Multilanguage",
-          "img": "https://source.unsplash.com/random",
-          "desc": "Questa funzionalità permette all'utente di scegliere la propria lingua. Non è del tutto implementato ma a livello di esercizi da inserire nella scheda e la personalizzazione della propria dieta possono essere fatte in diverse lingue.",
-          "descFeature": []
-        },
-        {
-          "name": "Free",
-          "img": "https://source.unsplash.com/random",
-          "desc": "L'app è stata progettata per essere gratuita a tutti coloro che hanno la necessità di iniziare l'approccio all'interno del mondo del fitness. Per qualsiasi idea di miglioramente o qualche feature da inserire vi prego di segnalarlo al seguente link.",
-          "link": "Link di segnalazione",
-          "descFeature": []
-        }
-      ],
-      "technology": [
-        {
-          "name": "Authentication",
-          "desc": "Per la parte relativa all'autenticazione è stato utilizzato Firebase per la gestione delle credenziali di accesso e dello stacco dello user Id. Successivamente lato server viene generato il Jwt token passato al client."
-        },
-        {
-          "name": "Database",
-          "desc": "MongoDB è il principale db utilizzato per il savlataggio dei dati. Le scelte su questo database sono state per la sua scalabilità e gestione di grandi quantità di dati."
-        },
-        {
-          "name": "Client",
-          "desc": "L'interfaccia utente è stataprogettata e realizzata in ReactJs."
-        },
-        {
-          "name": "Backend",
-          "desc": "Il sistema è stato sviluppato attraverso NodeJs."
-        },
-        {
-          "name": "Design",
-          "desc": "The entire application was made following the Material Design tips using Material UI js library in addition to vanilla css style."
-        }
-      ],
-      "demo": "link to demo video",
-      "future_develop": "L'app è stata pensata per essere un servizio gratuito per la gestione dell'allenamento."
-    },
     {
       "name": "University Master Thesis",
       "value": 2,
