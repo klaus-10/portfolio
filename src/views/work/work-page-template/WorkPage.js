@@ -114,16 +114,18 @@ export default function WorkPage() {
         </div>
       )} */}
 
-      <div className="image landscape-image">
-        <iframe
-          style={{ width: "100%", minHeight: "75vh", position: "relative" }}
-          src={
-            item?.video
-              ? `${process.env.PUBLIC_URL}/video/${item.video}.mp4`
-              : item?.url
-          }
-        />
-      </div>
+      {(item?.video || item?.url) && (
+        <div className="image landscape-image">
+          <iframe
+            style={{ width: "100%", minHeight: "75vh", position: "relative" }}
+            src={
+              item?.video
+                ? `${process.env.PUBLIC_URL}/video/${item.video}.mp4`
+                : item?.url
+            }
+          />
+        </div>
+      )}
 
       {/* {item?.video && (
         <video width="320" height="240" controls>

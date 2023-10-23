@@ -4,9 +4,19 @@
   gap: 20px;
 }
 
+.grid-3-space {
+  display: flex !important;
+  /* grid-template-columns: repeat(3, 1fr); */
+  gap: 20px;
+}
+
+.grid-3-space .grid-elem {
+  flex-grow: 1;
+}
+
 .grid-elem {
   flex-grow: 1;
-  max-height: 35vh;
+  max-height: 50vh;
   position: relative;
 }
 
@@ -36,7 +46,8 @@
 }
 
 @media screen and (max-width: 800px) {
-  .grid-2-space {
+  .grid-2-space,
+  .grid-3-space {
     display: flex !important;
     max-width: 100%;
     overflow-x: auto;
