@@ -114,7 +114,7 @@
         },
         {
           "name": "Multilanguage",
-          "img": "https://source.unsplash.com/random",
+          "img": "yoxeen/yoxeen_multi_language",
           "desc": "Questa funzionalità permette all'utente di scegliere la propria lingua. Non è del tutto implementato ma a livello di esercizi da inserire nella scheda e la personalizzazione della propria dieta possono essere fatte in diverse lingue.",
           "descFeature": []
         },
@@ -145,7 +145,7 @@
         {
           "name": "Explore",
           "img": "",
-          "desc": "Nel caso avessi la necessità di trovare un personal trainer nella tuo zona sarà possibile effettuarlo andando nella sezione apposita e cercando semplicemente la città. Nel caso in cui non dovessero esserci pt saranno visualizzati i più vicini entro un raggio di 50km.",
+          "desc": "In questa sezione è possibile trovare i personal trainer della tua zona, valutati dalle recensioni che gli utenti hanno lasciato a seguito di un contatto telefonico. Questa parte è ancora in via di sviluppo, però la struttura di base è già stata costruita.",
           "descFeature": [
             {
               "name": "Home",
@@ -180,7 +180,7 @@
         },
         {
           "name": "Multilanguage",
-          "img": "yoxeen/yoxeen_multi_language",
+          "img": "yoxeen/yoxeen_multilanguage",
           "desc": "Questa funzionalità permette all'utente di scegliere la propria lingua. Non è del tutto implementato ma a livello di esercizi da inserire nella scheda e la personalizzazione della propria dieta possono essere fatte in diverse lingue.",
           "descFeature": []
         },
