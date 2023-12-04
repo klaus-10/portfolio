@@ -13,7 +13,7 @@ export default function Contact() {
         <h1>Contact</h1>
       </div>
 
-      <div className="grid-wrap flex-center">
+      {/* <div className="grid-wrap flex-center">
         <div className="contact-box ww ">
           <div className="info">
             <CustomTextFiels
@@ -42,7 +42,7 @@ export default function Contact() {
 
           <div className="contact-btn flex-center">send</div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
