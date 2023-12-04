@@ -10,7 +10,7 @@ import WorkPage from "./views/work/work-page-template/WorkPage";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/portfolio">
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />}>
