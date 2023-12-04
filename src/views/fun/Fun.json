@@ -1,0 +1,84 @@
+{
+  "skills_2": [
+    {
+      "name": "Web Development",
+      "value": 1,
+      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "link": "",
+      "github": "",
+      "img": "https://source.unsplash.com/random"
+    },
+    {
+      "name": "Back-end Development",
+      "value": 1,
+      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "link": "",
+      "github": "",
+      "img": "https://source.unsplash.com/random"
+    },
+    {
+      "name": "Git Version Control",
+      "value": 7,
+      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "link": "",
+      "github": "",
+      "img": "https://source.unsplash.com/random"
+    },
+    {
+      "name": "App Design",
+      "value": 1,
+      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "link": "",
+      "github": "",
+      "img": "https://source.unsplash.com/random"
+    },
+    {
+      "name": "Database",
+      "value": 1,
+      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "link": "",
+      "github": "",
+      "img": "https://source.unsplash.com/random"
+    },
+    {
+      "name": "Teamwork",
+      "value": 1,
+      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "link": "",
+      "github": "",
+      "img": "https://source.unsplash.com/random"
+    },
+    {
+      "name": "Git Version Control",
+      "value": 7,
+      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "link": "",
+      "github": "",
+      "img": "https://source.unsplash.com/random"
+    },
+    {
+      "name": "App Design",
+      "value": 1,
+      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "link": "",
+      "github": "",
+      "img": "https://source.unsplash.com/random"
+    },
+    {
+      "name": "Database",
+      "value": 1,
+      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "link": "",
+      "github": "",
+      "img": "https://source.unsplash.com/random"
+    },
+    {
+      "name": "Teamwork",
+      "value": 1,
+      "desc": "Turn hi-fi designs to lo-fi in one click - comes in nasty pink.",
+      "link": "",
+      "github": "",
+      "img": "https://source.unsplash.com/random"
+    }
+  ]
+}

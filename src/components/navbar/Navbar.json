@@ -1,0 +1,24 @@
+{
+  "navbar": [
+    {
+      "text": "Work",
+      "link": "/work",
+      "icon": "work"
+    },
+    {
+      "text": "About",
+      "link": "/about",
+      "icon": "about"
+    },
+    {
+      "text": "Fun",
+      "link": "/fun",
+      "icon": "fun"
+    },
+    {
+      "text": "Contact",
+      "link": "/contact",
+      "icon": "contact"
+    }
+  ]
+}
