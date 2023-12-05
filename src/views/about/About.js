@@ -17,7 +17,7 @@ export default function About() {
 
           <div className="about-me-desc ww">
             {/* <h3>...</h3> */}
-            <h2>Hello there! My name is Klaus.</h2>
+            <h2>Hello there!</h2>
             <p>
               I'm Klaus, a dedicated software engineer deeply passionate about
               technology, sports, and continuous learning. Over my year-long
