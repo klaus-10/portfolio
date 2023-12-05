@@ -1,70 +1,110 @@
 {
   "skills": [
-    { "name": "Css", "value": 1, "desc": "" },
-    { "name": "GitLab", "value": 1, "desc": "" },
-    { "name": "Html", "value": 7, "desc": "" },
-    { "name": "Java", "value": 1, "desc": "" },
-    { "name": "Jenkins", "value": 1, "desc": "" },
-    { "name": "Js", "value": 1, "desc": "" },
-    { "name": "MongoDB", "value": 1, "desc": "" },
-    { "name": "NodeJs", "value": 1, "desc": "" },
-    { "name": "React", "value": 1, "desc": "" },
-    { "name": "SQL", "value": 1, "desc": "" },
-    { "name": "GitHub", "value": 1, "desc": "" }
+    {
+      "name": "Java",
+      "value": 6,
+      "desc": "Solid understanding and usage of Java for backend development."
+    },
+    {
+      "name": "Springboot",
+      "value": 6,
+      "desc": "Adequate experience using Spring Boot for creating backend systems."
+    },
+    {
+      "name": "Microservices",
+      "value": 5,
+      "desc": "Basic familiarity with microservices architecture for backend operations."
+    },
+    {
+      "name": "SQL",
+      "value": 6,
+      "desc": "Fundamental SQL skills for designing and querying relational databases."
+    },
+    {
+      "name": "MongoDB",
+      "value": 4,
+      "desc": "Basic exposure to MongoDB for NoSQL database management."
+    },
+    {
+      "name": "NodeJs",
+      "value": 4,
+      "desc": "Basic understanding of Node.js for backend application development."
+    },
+    {
+      "name": "GitLab",
+      "value": 5,
+      "desc": "Basic familiarity with GitLab for version control and collaboration."
+    },
+    {
+      "name": "GitHub",
+      "value": 5,
+      "desc": "Basic familiarity with GitHub for version control and collaborative development."
+    },
+    {
+      "name": "Jenkins",
+      "value": 4,
+      "desc": "Basic understanding of Jenkins for CI/CD and automation."
+    },
+    {
+      "name": "Ansible",
+      "value": 4,
+      "desc": "Basic knowledge of Ansible for configuration management."
+    }
   ],
   "skills_2": [
     {
-      "name": "Web Development",
-      "value": 1,
-      "desc": "Craft engaging and interactive web experiences, turning high-fidelity designs into functional prototypes.",
-      "img": "public"
-    },
-    {
-      "name": "Back-end Development",
-      "value": 1,
-      "desc": "Build the core of applications, handling server-side logic and databases to ensure seamless functionality.",
+      "name": "Backend Development",
+      "value": 7,
+      "desc": "Competent in backend development practices and principles.",
       "img": "code"
     },
     {
-      "name": "Git Version Control",
-      "value": 7,
-      "desc": "Efficiently manage codebase changes, collaborate seamlessly with teams, and track project progress using Git.",
-      "img": "account_tree"
-    },
-    {
-      "name": "App Design",
-      "value": 1,
-      "desc": "Design visually appealing and user-friendly app interfaces that enhance user experiences.",
-      "img": "draw"
-    },
-    {
-      "name": "Database",
-      "value": 1,
-      "desc": "Design, implement, and manage databases to ensure efficient data storage and retrieval.",
+      "name": "Database Management",
+      "value": 6,
+      "desc": "Adequate understanding of database design and management.",
       "img": "database"
     },
     {
-      "name": "Teamwork",
-      "value": 1,
-      "desc": "Collaborate effectively within teams, leveraging diverse skills to achieve project goals cohesively.",
-      "img": "groups"
+      "name": "Microservices Architecture",
+      "value": 5,
+      "desc": "Basic understanding of microservices architecture for backend systems.",
+      "img": "code"
+    },
+    {
+      "name": "Version Control Systems",
+      "value": 6,
+      "desc": "Adequate understanding of Git and version control systems.",
+      "img": "account_tree"
+    },
+    {
+      "name": "Continuous Integration & Deployment",
+      "value": 5,
+      "desc": "Basic knowledge of CI/CD practices using Jenkins.",
+      "img": "code"
+    },
+    {
+      "name": "Backend Frameworks",
+      "value": 7,
+      "desc": "Competent in using Spring Boot and Node.js for backend development.",
+      "img": "code"
     }
   ],
+
   "passions": [
     {
       "img": "https://source.unsplash.com/random",
-      "name": "Design",
-      "description": " I take pleasure in creating visually appealing and functional solutions. My creativity knows no bounds, and I find inspiration in everything around me."
+      "name": "Tech Exploration",
+      "description": " I'm fueled by the ever-evolving tech landscape, constantly diving into new frameworks and tools. My passion lies in uncovering innovative solutions and refining my expertise in coding and system architecture."
     },
     {
       "img": "https://source.unsplash.com/random",
-      "name": "Technology",
-      "description": "I have a deep passion for technology, constantly exploring the latest advancements in the field. From coding to hardware, I strive to stay up-to-date and experiment with new tools and techniques. The limitless possibilities motivate and excite me to keep pushing my boundaries in my work."
+      "name": "Problem-Solving",
+      "description": "I find fulfillment in deciphering complex challenges and architecting robust, scalable software solutions. Every problem presents an opportunity for me to apply creative thinking and analytical skills."
     },
     {
       "img": "https://source.unsplash.com/random",
-      "name": "Sport",
-      "description": "I have a deep passion for the gym as it allows me to not only stay physically fit, but also provides an outlet for mental clarity and stress relief. Each workout presents a new challenge, and the sense of accomplishment afterwards is truly rewarding."
+      "name": "Continuous Growth",
+      "description": "Learning is my lifelong companion. I immerse myself in industry literature, courses, and hands-on projects to stay abreast of emerging trends and refine my craft. The quest for growth is both my driver and my delight."
     }
   ]
 }

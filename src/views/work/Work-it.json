@@ -1,0 +1,459 @@
+{
+  "done": [
+    {
+      "name": "Spotify",
+      "value": 1,
+      "desc": "Simple Spotify app clone with some extra features",
+      "link": "spotify",
+      "url": "",
+      "video": "spotify_app_overview",
+      "github": "",
+      "img": "",
+      "role": "Product designer, backend",
+      "team": ["name", "test"],
+      "timeline": "01-04-2023 / 15-04-2023",
+      "overview": "The project originated from a University course where it was required to develop an application of choice. Always wanting to create a music-related app, I decided to make a clone of Spotify.",
+      "details": "The application was primarily developed to enable anyone to access the service for free. Therefore, there's no initial login screen; users directly access the app dashboard. The side menu allows navigation through various pages, while the app mainly consists of collections of songs divided into different sections and categories.",
+      "mainFeature": [
+        {
+          "name": "Search song",
+          "img": "spotify/spotify_search",
+          "desc": "The system allows searching for songs, artists, and albums with related searches.",
+          "descFeature": []
+        },
+        {
+          "name": "Home",
+          "img": "spotify/spotify_home",
+          "desc": "In this section, users find themselves on the app's HomePage, where they can truly 'discover' featured tracks.",
+          "descFeature": []
+        },
+        {
+          "name": "Library",
+          "img": "spotify/spotify_playlist",
+          "desc": "Once logged in, users can view their Spotify library. Integration of the API switch from Rapid API to Spotify's API for music playback is still pending.",
+          "descFeature": []
+        },
+        {
+          "name": "Track",
+          "img": "spotify/spotify_track",
+          "desc": "This page allows playing a song from a specific artist; using a limited API, users can listen to only part of the track.",
+          "descFeature": []
+        }
+      ],
+      "gridFeature": [],
+      "feature": [
+        {
+          "name": "Login",
+          "img": "",
+          "desc": "Login is possible only with a premium Spotify account, enabling the use of available Spotify APIs."
+        },
+        {
+          "name": "Design",
+          "img": "",
+          "desc": "The design is similar but at the same time innovative as it aims to add what's missing from the service.",
+          "descFeature": []
+        }
+      ],
+      "technology": [
+        {
+          "name": "Authentication calls",
+          "desc": "Authentication was done using the access token available on Spotify's developer page. Later, another token from RapidAPI was used to retrieve MP3s related to searched songs."
+        },
+        {
+          "name": "Client",
+          "desc": "The user interface was designed and implemented in ReactJs."
+        },
+        {
+          "name": "Design",
+          "desc": "The entire application was made with vanilla CSS styles, following the original Spotify design and palette."
+        }
+      ]
+    },
+    {
+      "name": "Yoxeen",
+      "value": 1,
+      "desc": "Gym training support system with workout and diet plan creation functionalities.",
+      "link": "yoxeen",
+      "url": "https://yoxeen.it",
+      "github": "",
+      "img": "",
+      "role": "Product designer, backend",
+      "team": ["name", "test"],
+      "timeline": "01-04-2021 / 08-07-2022",
+      "overview": "The project was born to allow anyone to create their own workout plan. During the initial design phase, I noticed the absence of applications offering this functionality for free.",
+      "details": "The system allows access and saving of workout progress, retrieving workout statistics, saving routines, and monitoring daily data from sensors.",
+      "mainFeature": [
+        {
+          "name": "Workout builder",
+          "img": "",
+          "video": "yoxeen_workout",
+          "desc": "This section allows access as a user profile or trainer. Registration through a form is required for proper login.",
+          "descList": [
+            "Workout plan creation",
+            "Modification",
+            "Saving",
+            "PDF export",
+            "Sharing with another user"
+          ],
+          "descFeature": []
+        },
+        {
+          "name": "Diet Build",
+          "img": "",
+          "video": "yoxeen_diet",
+          "desc": "In this app section, users can create a personalized meal plan. Food search can be done in 5 languages, and results will be saved in the user's set profile language. The food database focuses on healthy eating. In case of missing items or needs, please report them in the contact section.",
+          "descList": ["Meal plan creation", "Modification", "PDF export"],
+          "descFeature": []
+        },
+        {
+          "name": "Multilanguage",
+          "img": "yoxeen/yoxeen_multi_language",
+          "desc": "This feature allows users to choose their language. It's not fully implemented, but exercise inclusion in the workout plan and customizing the diet can be done in multiple languages.",
+          "descFeature": []
+        },
+        {
+          "name": "Statistics",
+          "img": "https://source.unsplash.com/random",
+          "desc": "Within the app, users can track all data and later view generated statistics.",
+          "descList": [],
+          "descFeature": [
+            {
+              "name": "Macro Chart",
+              "img": "yoxeen/yoxeen_progress_macro"
+            },
+            {
+              "name": "Weight chart",
+              "img": "yoxeen/yoxeen_progress_weight"
+            },
+            {
+              "name": "Workout chart",
+              "img": "yoxeen/yoxeen_progress_workout_stats"
+            },
+            {
+              "name": "Google Fit Daily data",
+              "img": "yoxeen/yoxeen_progress_google_fit"
+            }
+          ]
+        },
+        {
+          "name": "Explore",
+          "img": "",
+          "desc": "This section allows users to find personal trainers in their area, rated based on user reviews after contact. This part is still under development, but the basic structure is already built.",
+          "descFeature": [
+            {
+              "name": "Home",
+              "img": "yoxeen/yoxeen_explore_home"
+            },
+            {
+              "name": "Category",
+              "img": "yoxeen/yoxeen_explore_category"
+            },
+            {
+              "name": "Exercises list",
+              "img": "yoxeen/yoxeen_explore_exercises_list"
+            },
+            {
+              "name": "Exercise",
+              "img": "yoxeen/yoxeen_explore_exercise"
+            }
+          ]
+        },
+        {
+          "name": "Find PT",
+          "img": "yoxeen/yoxeen_find_expert",
+          "desc": "If you need to find a personal trainer in your area, you can do so in this dedicated section by simply searching for the city. If there are no trainers available, the closest ones within a 50km radius will be displayed.",
+          "descFeature": []
+        }
+      ],
+      "feature": [
+        {
+          "name": "Login",
+          "img": "https://source.unsplash.com/random",
+          "desc": "The login part is implemented using Firebase and JWT tokens, allowing a generic user to access and have an account to save all progress."
+        },
+        {
+          "name": "Multilanguage",
+          "img": "yoxeen/yoxeen_multilanguage",
+          "desc": "This feature allows users to choose their language. It's not fully implemented, but exercise inclusion in the workout plan and customizing the diet can be done in multiple languages.",
+          "descFeature": []
+        },
+        {
+          "name": "Free",
+          "img": "https://source.unsplash.com/random",
+          "desc": "The app is designed to be free for anyone starting their fitness journey. For any improvement ideas or feature suggestions, please report them using the following link.",
+          "link": "Report link",
+          "descFeature": []
+        }
+      ],
+      "technology": [
+        {
+          "name": "Authentication",
+          "desc": "Firebase was used for authentication, managing access credentials, and user ID handling. Subsequently, the server-side generates a JWT token passed to the client."
+        },
+        {
+          "name": "Database",
+          "desc": "MongoDB is the main database used for data storage. This database choice was made for its scalability and handling of large amounts of data."
+        },
+        {
+          "name": "Client",
+          "desc": "The user interface was designed and implemented in ReactJs."
+        },
+        {
+          "name": "Backend",
+          "desc": "The system was developed using NodeJs."
+        },
+        {
+          "name": "Design",
+          "desc": "The entire application was created following Material Design principles using the Material UI JS library in addition to vanilla CSS styles."
+        }
+      ],
+      "demo": "Link to demo video",
+      "future_develop": "The app was designed to be a free service for managing workouts."
+    },
+    {
+      "name": "Disco",
+      "value": 7,
+      "desc": "Event management system for nightclubs",
+      "link": "disco",
+      "github": "",
+      "img": "",
+      "role": "Product designer, backend",
+      "team": ["name", "test"],
+      "timeline": "01-04-2021 / 08-07-2022",
+      "overview": "The project was conceived to create a service for nightclub reservations. Concepts like statistics, entries, giveaways, and guest lists are integral to the system and are utilized every night by all nightclubs. The application simplifies these processes and enables better management of the venue.",
+      "details": "The application was primarily developed to allow anyone to access the service for free. Therefore, there's no initial login screen; users directly access the app dashboard. The side menu allows navigation through various pages while the app mainly consists of collections of songs divided into different sections and categories.",
+      "mainFeature": [],
+      "feature": [
+        {
+          "name": "Login",
+          "img": "https://source.unsplash.com/random",
+          "desc": "Administrator login for a nightclub"
+        },
+        {
+          "name": "Dashboard",
+          "img": "yoxeen/yoxeen_multi_language",
+          "desc": "Main screen for administrators to manage reservations",
+          "descFeature": []
+        },
+        {
+          "name": "Booking",
+          "img": "https://source.unsplash.com/random",
+          "desc": "Individual booking for a specific night. Bookings can be made through guest lists, tables, or through a PR representative of the venue. Bookings can be canceled or modified.",
+          "descFeature": []
+        },
+        {
+          "name": "Stats",
+          "img": "https://source.unsplash.com/random",
+          "desc": "Within the dashboard, a summary of statistics for each night and collectively for all nights can be viewed. Additionally, an email mechanism has been implemented to send event summaries.",
+          "descFeature": []
+        },
+        {
+          "name": "Pdf",
+          "img": "https://source.unsplash.com/random",
+          "desc": "Every administrator can save their orders, tables, and more within a PDF file, digitizing the entire system.",
+          "descFeature": []
+        },
+        {
+          "name": "Telegram Bot",
+          "img": "https://source.unsplash.com/random",
+          "desc": "A nightclub administrator usually relies on PR representatives to make or manage reservations. For this reason, a Telegram bot was created for this role, which after registration by the PR and approval by the administrator, can begin operations.",
+          "descFeature": []
+        },
+        {
+          "name": "Multi-club",
+          "img": "https://source.unsplash.com/random",
+          "desc": "An administrator can either own or be a part of multiple venues. Therefore, there's the ability to modify their list of venues by adding a new one.",
+          "descFeature": []
+        }
+      ],
+      "technology": [
+        {
+          "name": "Authentication",
+          "desc": "Firebase was used for authentication, managing access credentials, and user ID handling. Subsequently, the server-side generates a JWT token passed to the client."
+        },
+        {
+          "name": "Database",
+          "desc": "MySQL is the primary database used for data storage. This choice was made for its clear organization of information."
+        },
+        {
+          "name": "Client",
+          "desc": "The user interface was designed and implemented in ReactJs."
+        },
+        {
+          "name": "Backend",
+          "desc": "The system was developed using NodeJs."
+        },
+        {
+          "name": "Design",
+          "desc": "The entire application was created following Material Design principles using the Material UI JS library in addition to vanilla CSS styles."
+        }
+      ],
+      "future_develop": "In conclusion, the app was not only designed to be a mere copy of Spotify's original service but rather as a new platform that could improve upon its existing features. Future functionalities to be implemented include: • Inclusion of a page related to concerts of a particular artist or those in a particular city • Implementation of radio since there are channels with significant listenership that would likely increase the application's usage time • Better utilization of Spotify's available API to use the generated token for multiple calls, reducing reliance on the current Rapid-API solution"
+    },
+    {
+      "name": "University Bachelor Thesis",
+      "value": 2,
+      "desc": "University research project involving the development of a routing algorithm adapted to micromobility vehicles to find the shortest, safest routes based on user input preferences.",
+      "link": "bachelor",
+      "github": "",
+      "img": "",
+      "role": "Full stack developer",
+      "team": ["me"],
+      "timeline": "01-04-2023 / 28-09-2023",
+      "overview": "The project originated as an extension of an existing health monitoring system using a smartwatch. Specifically, a dietary monitoring module was created to track the patient's diet. Additionally, a communication and monitoring system tailored to doctors was added, enabling direct patient monitoring from the doctor's app and notification if necessary.",
+      "details": "Two Android applications were specifically developed.",
+      "mainFeature": [
+        {
+          "name": "ARCHITECTURE",
+          "img": "lifezone/lifezone_architecture",
+          "desc": "This represents the system abstraction and how each part was integrated to make it as efficient as possible.",
+          "descFeature": []
+        },
+        {
+          "name": "CLIENT_HOME",
+          "img": "https://source.unsplash.com/random",
+          "desc": "This page represents the core of the dietary module. Here, users can perform operations like adding, removing, and modifying inserted foods. Additionally, there's a summary of the main macronutrients consumed during the day.",
+          "descFeature": [
+            {
+              "name": "home",
+              "img": "lifezone/lifezone_home_diary"
+            },
+            {
+              "name": "add meal screen",
+              "img": "lifezone/lifezone_home_meal"
+            },
+            {
+              "name": "water goal",
+              "img": "lifezone/lifezone_home_water_goal"
+            }
+          ]
+        },
+        {
+          "name": "CLIENT_ACTIVITY",
+          "img": "https://source.unsplash.com/random",
+          "desc": "On this page, patients can view their daily steps and notifications received from their doctor. These notifications are messages that a doctor wants to convey to their patient, such as 'Drink more water' or 'Remember to take 5000 steps', functioning as reminders.",
+          "descFeature": [
+            {
+              "name": "activity_1",
+              "img": "lifezone/lifezone_activity_1"
+            },
+            {
+              "name": "activity_2",
+              "img": "lifezone/lifezone_activity_2"
+            },
+            {
+              "name": "activity message",
+              "img": "lifezone/lifezone_activity_message"
+            }
+          ]
+        },
+        {
+          "name": "CLIENT_COACH",
+          "img": "https://source.unsplash.com/random",
+          "desc": "On this screen, a patient can consult articles to improve their diet. These articles are grouped into various categories and are specially prepared to allow easy reading and categorization.",
+          "descFeature": [
+            {
+              "name": "coach",
+              "img": "lifezone/lifezone_coach_1"
+            },
+            {
+              "name": "coach detail",
+              "img": "lifezone/lifezone_coach_2"
+            }
+          ]
+        }
+      ],
+      "feature": [],
+      "technology": [
+        {
+          "name": "Authentication",
+          "desc": "Firebase was used for authentication, managing access credentials, and user ID handling. Subsequently, the server-side generates a JWT token passed to the client."
+        },
+        {
+          "name": "Database",
+          "desc": "PostgreSQL is the main database used for data storage. This database choice was made for its scalability and management of large amounts of data."
+        },
+        {
+          "name": "Client",
+          "desc": "The user interface was designed and implemented in ReactJs."
+        },
+        {
+          "name": "Backend",
+          "desc": "The system was developed using Java Spring Boot."
+        },
+        {
+          "name": "Design",
+          "desc": "The entire application was created following Material Design principles using the Material UI JS library in addition to vanilla CSS styles. The map uses Leaflet."
+        }
+      ],
+      "demo": "link to demo video",
+      "future_develop": "The app was designed to be a free service for training management."
+    }
+  ],
+  "progress": [
+    {
+      "name": "University Master Thesis",
+      "value": 2,
+      "desc": "University research project involving the development of a routing algorithm adapted to micromobility vehicles to find the shortest, safest routes based on user input preferences.",
+      "link": "master",
+      "github": "",
+      "img": "",
+      "role": "Full stack developer",
+      "team": ["me"],
+      "timeline": "01-04-2023 / 28-09-2023",
+      "overview": "The project was born with the idea of allowing a user of a micromobility vehicle to use it in the safest way possible. Indeed, there are various problems surrounding this new type of transport, and user safety is a very important theme. For this reason, a routing algorithm was developed based primarily on the weight of the arc that takes into account all the variables that may exist during the route.",
+      "details": "Initially, the system was designed to run locally, but with subsequent reflections based on future developments, the choice to use a database and not the computer's memory for graph construction determined the developments. Therefore, the chosen database was PostgreSQL with the extension of PostGIS, and an application using SpringBoot in Java was developed to perform queries. The project then evolved with a graphical interface developed in ReactJs for the real-time visualization of the route.",
+      "mainFeature": [
+        {
+          "name": "Routing",
+          "img": "https://source.unsplash.com/random",
+          "desc": "The main feature of the system is based on finding the shortest optimal path. So far, the algorithm used is exclusively based on urban roads within the city, encompassing all existing traversable routes. Therefore, it does not consider transport as an intermediate means of movement.",
+          "descFeature": []
+        },
+        {
+          "name": "Form",
+          "img": "https://source.unsplash.com/random",
+          "desc": "In this part of the page, we find the component related to the form that allows the user to quickly choose the means of transport and the points of the route.",
+          "descFeature": []
+        },
+        {
+          "name": "Multi-path",
+          "img": "https://source.unsplash.com/random",
+          "desc": "This feature simply allows choosing multiple destination routes.",
+          "descFeature": []
+        },
+        {
+          "name": "Multilanguage",
+          "img": "https://source.unsplash.com/random",
+          "desc": "This functionality allows the user to choose their language. It is not entirely implemented, but exercises to be included in the card and personalization of the diet can be done in different languages.",
+          "descFeature": []
+        }
+      ],
+      "feature": [],
+      "technology": [
+        {
+          "name": "Authentication",
+          "desc": "Firebase was used for authentication, managing access credentials, and user ID handling. Subsequently, the server-side generates a JWT token passed to the client."
+        },
+        {
+          "name": "Database",
+          "desc": "PostgreSQL is the main database used for data storage. This database choice was made for its scalability and management of large amounts of data."
+        },
+        {
+          "name": "Client",
+          "desc": "The user interface was designed and implemented in ReactJs."
+        },
+        {
+          "name": "Backend",
+          "desc": "The system was developed using Java Spring Boot."
+        },
+        {
+          "name": "Design",
+          "desc": "The entire application was created following Material Design principles using the Material UI JS library in addition to vanilla CSS styles. The map uses Leaflet."
+        }
+      ],
+      "demo": "link to demo video",
+      "future_develop": "The app was designed to be a free service for training management."
+    }
+  ]
+}
