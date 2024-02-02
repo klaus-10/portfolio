@@ -8,7 +8,7 @@ export default function Fun() {
     <div className="fun">
       <div className="about-title">
         {/* <h1>Fun.</h1> */}
-        <h1>Cooming soon.</h1>
+        <h1>Coming soon.</h1>
       </div>
 
       <div className="grid-wrap flex-center">
