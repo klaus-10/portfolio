@@ -64,7 +64,12 @@
   object-fit: contain;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
+  .workout-card-outline {
+    grid-column: span 10 / span 10 !important;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .workout-card-outline {
     grid-column: span 10 / span 10 !important;
   }
